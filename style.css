@@ -25,18 +25,17 @@ body {
     text-decoration: none;
 }
 
+.bitrix_cont_zero img{
+    display: block;
+}
+
 /*  =========================================================*/
 
 /*  =========================================================
                         СКРЫТЫЕ БЛОКИ
 ============================================================*/
 
-.block_choose_us,
-.discount_block,
-.price_calc_block,
-.factory_prod_block,
-.block_sertificate,
-.exampl_work_block,
+
 .think_about_us,
 .social_up_block,
 .sub_cont_text_up,
@@ -46,6 +45,24 @@ body {
     display: none;
 }
 /*  =========================================================*/
+
+
+
+/* общий стили для текстов и прочей ебалы */
+.text_stock{
+    color: #000;
+font-family: "Montserrat";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.margin-top_class{
+    margin-top: 57px;
+}
+/* ------------------------------------- */
+
 
 /*  =========================================================
                      CARD_SECTION_LEST
@@ -529,7 +546,7 @@ body {
     position: relative;
 }
 
-.block_wrapper_video::after {
+.link_play::after {
     content: "";
     width: 70px;
     height: 70px;
@@ -1280,3 +1297,643 @@ z-index: 1;
 /* ======================================================== */
 
 
+/*  =========================================================
+                    block_choose_us
+============================================================*/
+
+.block_choose_us{
+    margin-top: 130px;
+}
+
+
+.wrapper_card_choose{
+  
+}
+
+.title_us_sup{
+    color: #2E9375;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card_block_choose{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
+.title_us_sub{
+    color: #575757;
+font-family: "Montserrat";
+font-size: 40px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+}
+
+.title_card_ch{
+    color: #FFF;
+font-family: "Montserrat";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+}
+
+.text_card_ch{
+    color: #FFF;
+font-family: "Montserrat";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.card_choose{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin: auto;
+   max-width: 363px;
+   width: 100%;
+   height: 163px;
+}
+
+.one::after{
+    position: absolute;
+    content: '';
+    background: url(./img/1.svg) no-repeat center;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 162px;
+}
+
+.two::after{
+    position: absolute;
+    content: '';
+    background: url(./img/2.svg) no-repeat center;
+    top: 0;
+    left: 0;
+    width: 142px;
+    height: 162px;
+}
+
+.free::after{
+    position: absolute;
+    content: '';
+    background: url(./img/3.svg) no-repeat center;
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 162px;
+}
+
+.four::after{
+    position: absolute;
+    content: '';
+    background: url(./img/4.svg) no-repeat center;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 162px;
+}
+.five::after{
+    position: absolute;
+    content: '';
+    background: url(./img/5.svg) no-repeat center;
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 162px;
+}
+
+.cont_ch{
+    position: relative;
+    background: #2E9375;
+    max-width: 493px;
+    width: 100%;
+}
+
+.card_choose_{
+    display: block;
+}
+
+.tit_catch_choose{
+    color: #575757;
+text-align: right;
+font-family: "Montserrat";
+font-size: 40px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+}
+
+.tetx_choose_catch{
+    color: #000;
+    text-align: right;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 493px;
+    width: 100%;
+}
+
+.block_text_choose_catch{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* ======================================================== */
+
+
+
+/*  =========================================================
+                    discount_block
+============================================================*/
+
+.discount_block{
+    margin-top: 130px;
+}
+
+.card_block_disc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.title_disc{
+    color: #2E9375;
+font-family: "Montserrat";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.wrapper_cont_disc{
+    display: flex;
+    gap: 10px 10px;
+    margin-left: auto;
+    margin-right:auto ;
+}
+
+.disc_card{
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    height: 200px;
+}
+
+.tit_dick_card{
+    color: #2E9375;
+font-family: "Montserrat";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.txt_dick_card{
+    color: #000;
+font-family: "Montserrat";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.percent_block_{
+    display: block;
+    padding-top: 36px;
+}
+
+
+
+.text_all_dsc{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 36px;
+}
+
+.stub_img{
+    display: flex;
+    background: #2E9375;
+    width: 100%;
+}
+/* ========================================================= */
+
+
+/*  =========================================================
+                    price_calc_block
+============================================================*/
+
+.price_calc_block{
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stub_img_2{
+    display: flex;
+    max-width: 870px;
+    width: 100%;
+    height: 390px;
+    background: #2e9375;
+}
+
+.right_cont_price{
+    max-width: 870px;
+    width: 100%;
+}
+
+.pr_calc_title{
+    color: #2E9375;
+font-family: "Montserrat";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+}
+
+.pr_calc_title_sub{
+    color: #575757;
+font-family: "Montserrat";
+font-size: 40px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+}
+
+.text_pr_calc{
+color: #000;
+font-family: "Montserrat";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+max-width: 619px;
+width: 100%;
+}
+.text_pr_calc:first-child{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.tit_time_work{
+    margin-top: 60px;
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.weekday{
+    color: #000;
+font-family: "Montserrat";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.btn_write_whats{
+    color: #FFF;
+font-family: "Montserrat";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+
+.wrapp_btn_wha{
+    margin-top: 60px;
+padding: 20px 40px;
+align-items: center;
+display: flex;
+gap: 10px 10px;
+background: #2E9375;
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+max-width: 357px;
+width: 100%;
+}
+
+.icon_whats_btn{
+    width: 20px;
+    height: 20px;
+    background: url(./img/whats_svg.svg);
+    display: flex;
+    top: 0;
+    left: -20px;
+}
+
+.text_bann_sup{
+    color: #000;
+font-family: "Montserrat";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: right;
+margin-bottom: 10px;
+margin-top: 20px;
+}
+
+.number_bann_sub{
+    color: #575757;
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal; 
+    text-align: right;
+}
+/* ======================================================== */
+
+
+/*  =========================================================
+                    factory_prod_block
+============================================================*/
+.factory_prod_block{
+margin-top: 130px;
+}
+
+.factory_title{
+    color: #2E9375;
+font-family: "Montserrat";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+}
+
+.factory_title_sub{
+    color: #575757;
+font-family: "Montserrat";
+font-size: 40px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+text-align: right;
+}
+
+.block_cont_factory{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.block_img_factory img{
+    display: block;
+}
+
+.block_img_factory{
+    max-width: 619px;
+    width: 100%;
+}
+
+.block_factory_video{
+    max-width: 841px;
+    width: 100%;
+}
+
+.block_factory_video img{
+    display: block;
+}
+
+.tit_factory_img{
+    color: #575757;
+font-family: "Montserrat";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.div_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px;
+}
+
+.link_play_wrapper{
+    position: relative;
+}
+
+.wrapper_arrow_{
+    position: relative;
+}
+
+.link_play_factory::after{
+    content: "";
+    width: 70px;
+    height: 70px;
+    background: url(./img/play.svg) no-repeat center;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.block_arrow_img_fac{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    max-width: 619px;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.block_arrow_vid_fac{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    max-width: 841px;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* ========================================================= */
+
+
+/*  =========================================================
+                    block_sertificate
+============================================================*/
+
+.block_sertificate{
+    margin-top: 130px;
+}
+
+.title_sert{
+ color: #2E9375;
+text-align: right;
+font-family: "Montserrat";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.sub_title_sert{
+    margin-top: 20px;
+    color: #575757;
+text-align: right;
+font-family: "Montserrat";
+font-size: 40px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+}
+
+.div_cust_1{
+    max-width: 619px;
+    width: 100%;
+    margin-left:auto ;
+    margin-top: 30px;
+}
+
+.sert_btn{
+    display: flex;
+padding: 20px 80px;
+justify-content: center;
+align-items: center;
+background: #2E9375;
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    /* text */
+    color: #FFF;
+font-family: "Montserrat";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.wrapper_sert_btn{
+    max-width: 427px;
+    width: 100%;
+    margin-left: auto;
+    margin-top: 60px;
+}
+
+.block_sertificate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ======================================================== */
+
+
+/*  =========================================================
+                     exampl_work_block
+============================================================*/
+
+.exampl_work_block{
+    margin-top: 130px;
+}
+
+.title_exam{
+    color: #2E9375;
+font-family: "Montserrat";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.title_exam_sub{
+    margin-top: 20px;
+    color: #575757;
+font-family: "Montserrat";
+font-size: 40px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+text-align: right;
+}
+
+.block_project_card{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_card{
+    display: flex;
+    gap: 10px 10px;
+    max-width: 745px;
+    width: 100%;
+}
+
+.title_proj_cont{
+    color: #575757;
+font-family: "Montserrat";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+}
+
+.text_stock_cust{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 368px;
+    width: 100%;
+}
+
+.price_project{
+color: #575757;
+font-family: "Montserrat";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.strip_text_exam{
+    max-width: 367px;
+    width: 100%;
+    color: #000;
+font-family: "Montserrat";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.block_exam_char_lest{
+    display: flex;
+    flex-direction: column;
+    gap: 7px 0px;
+}
+
+.wrapp_cont_proj{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* ======================================================== */
