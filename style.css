@@ -36,8 +36,7 @@ body {
 ============================================================*/
 
 
-.think_about_us,
-.social_up_block,
+
 .sub_cont_text_up,
 .block_our_worker,
 .block_tabs_question,
@@ -1898,7 +1897,6 @@ margin-bottom: 20px;
 }
 
 .text_stock_cust{
-    margin-top: 20px;
     margin-bottom: 20px;
     max-width: 368px;
     width: 100%;
@@ -1935,5 +1933,214 @@ line-height: normal;
     justify-content: space-between;
 }
 
+.div_big_card_block{
+    display: flex;
+margin-top: 60px;
+justify-content: space-between;
+margin-bottom: 60px;
+}
 
+.wrapp_all_proj{
+   text-align: center;
+}
+
+.btn_all_proj{
+    background: #2E9375;
+    display: inline-flex;
+padding: 20px 80px;
+justify-content: center;
+align-items: center;
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+/* text */
+color: #FFF;
+font-family: "Montserrat";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 /* ======================================================== */
+
+
+/*  =========================================================
+                     think_about_us
+============================================================*/
+
+.video_think{
+    position: relative;
+    max-width: 861px;
+    width: 100%;
+}
+
+.link_play_us::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background: url(./img/play.svg) no-repeat center;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.title_think{
+    color: #2E9375;
+font-family: "Montserrat";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 35px;
+}
+
+.title_vid_thin{
+color: #2E9375;
+font-family: "Montserrat";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 35px;
+text-align: right;
+}
+
+.sub_title_vid_thin{
+    color: #575757;
+font-family: "Montserrat";
+font-size: 40px;
+font-style: italic;
+font-weight: 700;
+line-height: 35px; /* 87.5% */
+text-align: right;
+}
+
+.text_stock_cst{
+    max-width: 494px;
+    width: 100%;
+}
+
+.texts_think{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px;
+}
+
+.block_text_vid_think{
+    display: flex;
+    justify-content: right;
+    max-width: 861px;
+    margin-top: 30px;
+}
+
+.titles_think{
+    margin-right: 20px;
+}
+
+.think_about_us{
+    margin-top: 130px;
+}
+
+.wrapper_cont_think{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews_block{
+    display: flex;
+    max-width: 619px;
+    width: 100%;
+}
+
+.reviews_block iframe{
+    max-width: 619px;
+    width: 100%;
+    border: none;
+}
+/* ======================================================== */
+
+
+/*  =========================================================
+                     social_up_block
+============================================================*/
+
+.social_up_block{
+margin-top: 130px;
+}
+
+.title_up{
+    color: #2E9375;
+    text-align: right;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+.you{
+width: 242px;
+height: 55px;
+display: flex;
+background: url(./img/you.svg);
+}
+
+.telegram{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    background: url(./img/telega.svg);
+}
+
+.dzen{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    background: url(./img/dzen.svg);
+}
+
+.vk{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    background: url(./img/vk.svg);
+}
+
+.rutube{
+    width: 330px;
+    height: 55px;
+    display: flex;
+    background: url(./img/rutube.svg);
+}
+
+.odn{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    background: url(./img/odn.svg)
+}
+
+.block_social_link{
+display: flex;
+gap: 10px 60px;
+justify-content: center;
+margin-top: 60px;
+}
+
+
+.block_img_up{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub_cont_text_up{
+    color: #575757;
+font-family: "Montserrat";
+font-size: 40px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+}
+/* ======================================================== */
+
