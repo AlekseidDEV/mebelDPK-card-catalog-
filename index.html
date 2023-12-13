@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
+    <script src="./dist/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,11 +14,13 @@
 
         <div class="bitrix_cont_zero">
 
-
             <section class="card_section_lest">
                 <h1 class="title_card_top">
                     Уличная лестница Антик с подсветкой
                 </h1>
+                <div id="gabariteAdapt">
+
+                </div>
                 <div class="card_block_cont">
                     <div class="left_cont_card">
                         <div class="slider_block">
@@ -57,13 +59,13 @@
                             </div>
 
                             <div class="block_wrapper_video">
-                                <img src="./img/video1.png" alt="img">
+                                <img class="video1" src="./img/video1.png" alt="img">
                                 <a href="#" class="link_play"></a>
                             </div>
                         </div>
                     </div>
                     <div class="right_cont_cad">
-                        <div class="block_gabarit">
+                        <div id="gabblock" class="blockgabarit">
                             <p class="title_gabarite">
                                 Габариты, мм (ш х в х г):
                             </p>
@@ -87,9 +89,8 @@
                                 <p class="strip_text_char"><b>Облицовка ступеней</b> — ступеньпустотелая с носиком</p>
                                 <p class="strip_text_char"><b>Отделка подступенок</b> — ДПК доска</p>
                                 <p class="strip_text_char"><b>Отделка боковин</b> — сайдингом ДПК</p>
-    
-                                <a href="#" class="link_expand">Развернуть</a>
                             </div>
+                            <a href="#" class="link_expand">Развернуть</a>
                         </div>
     
                         <div class="tizer_sub_char_block">
@@ -222,6 +223,7 @@
                             <div class="wrapper_price_buy">
                                 <p class="price_number">49 300 р</p>
                                 <a class="btn_buy" href="#">купить</a>
+                                <a class="btn_buy_small" href="#"></a>
                             </div>
                             <p class="other_calc_text">Рассчитать стоимость в других размерах</p>
                         </div>
@@ -343,7 +345,7 @@
                                             <span class="list_mettal_1"></span>
                                         </div>
 
-                                        <div class="block_list_color_pvl">
+                                        <div class="block_list_color_riff">
                                             <p class="title_color_typ">Лист ПВЛ</p>
                                             <span class="list_mettal_2"></span>
                                         </div>
@@ -354,6 +356,12 @@
                         </div>
                     </div>
                     
+                </div>
+
+                <div class="dots_wrapper">
+                    <span class="dot dotActive"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
     
@@ -446,6 +454,12 @@
                  </div>
              </div>
                 </div>
+
+                <div class="dots_wrapper">
+                    <span class="dot dotActive"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
     
                 <div class="card_rall_text_block">
                     <div class="titles_block_rall">
@@ -457,18 +471,20 @@
                         </h3>
                     </div>
     
-                    <div class="block_texts_rall center_rall_texts">
-                        <p class="texts_rall_options">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
-                        </p>
-                        <p class="texts_rall_options">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        </p>
-                    </div>
-    
-                    <div class="block_texts_rall right_rall_texts">
-                        <p class="texts_rall_options">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu</p>
-                        <p class="texts_rall_options">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu</p>
+                    <div class="wrapper_text_rall">
+                        <div class="block_texts_rall center_rall_texts">
+                            <p class="texts_rall_options">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
+                            </p>
+                            <p class="texts_rall_options">
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            </p>
+                        </div>
+        
+                        <div class="block_texts_rall right_rall_texts">
+                            <p class="texts_rall_options">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu</p>
+                            <p class="texts_rall_options">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -496,11 +512,34 @@
         
                             <div class="wrapp_fields_form">
                                 <div class="select_file_why">
-                                    <p>
-                                        Где получить файл?
-                                    </p>
+                                    
+                                    <div class="custom-select_block">
+                                        <p class="sub_input_title">
+                                            Где получить файл?
+                                        </p>
 
-                                    <ul class="custom_select">
+                                        <ul class="options">
+                                            <li class="option active_option">
+                                                <div class="div_wrapp_cont">
+                                                    <div class="cont_option">
+                                                        <img src="./img/Group 18.svg" alt="img" class="option_img">
+                                                        <p class="option_desc">Whats’s app</p>
+                                                    </div>
+                                                    <a href="#" class="dropp_down"></a>
+                                                </div>
+                                            </li>
+                                            <li class="option">
+                                                <div class="div_wrapp_cont">
+                                                    <div class="cont_option">
+                                                        <img src="./img/Group 18.svg" alt="img" class="option_img">
+                                                        <p class="option_desc">Whats’s app</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- <ul class="custom_select">
                                         <li data-value="1">
                                             
                                         </li>
@@ -510,7 +549,7 @@
                                         <li data-value="3">
                                             
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                                     
                                 <div class="input_block">
@@ -533,64 +572,66 @@
                 <h2 class="title_turn_sup">Позаботимя за Вас о всех мелочах -</h2>
                 <h3 class="title_turn_sub">выполняем заказы под ключ</h3>
     
-                <div class="card_block_turn">
-                    <div class="card_turn calc">
-                        <div class="turn_cont_wrapper">
-                            <p class="title_card_turn">
-                                Предварительный<br>
-                                расчет - БЕСПЛАТНО 
-                            </p>
-    
-                            <p class="text_card_turn">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                            </p>
+                <div>
+                    <div class="card_block_turn">
+                        <div class="card_turn calc">
+                            <div class="turn_cont_wrapper">
+                                <p class="title_card_turn">
+                                    Предварительный<br>
+                                    расчет - БЕСПЛАТНО 
+                                </p>
+        
+                                <p class="text_card_turn">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                </p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card_turn wood">
-                        <div class="turn_cont_wrapper">
-                            <p class="title_card_turn">
-                                На замер выезжаем с<br>
-                                 образцами - БЕСПЛАТНО 
-                            </p>
     
-                            <p class="text_card_turn">
-                                или
-                                3.500 р при заказе от 35.000
-                            </p>
+                        <div class="card_turn wood">
+                            <div class="turn_cont_wrapper">
+                                <p class="title_card_turn">
+                                    На замер выезжаем с<br>
+                                     образцами - БЕСПЛАТНО 
+                                </p>
+        
+                                <p class="text_card_turn">
+                                    или
+                                    3.500 р при заказе от 35.000
+                                </p>
+                            </div>
                         </div>
-                    </div>
-
-
-                    <div class="card_turn card">
-                        <div class="turn_cont_wrapper">
-                            <p class="title_card_turn">
-                                Заключение договора - <br>
-                                внесение предоплаты 10%
-                            </p>
     
-                            <p class="text_card_turn">
-                                при заказе <br>
-                                индивидуальных размеров                            
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="card_turn box">
-                        <div class="turn_cont_wrapper">
-                            <p class="title_card_turn">
-                                Доставка и монтаж <br>
-                                при необходимости
-                            </p>
     
-                            <p class="text_card_turn">
-                                от 1.000 р
-                            </p>
+                        <div class="card_turn card">
+                            <div class="turn_cont_wrapper">
+                                <p class="title_card_turn">
+                                    Заключение договора - <br>
+                                    внесение предоплаты 10%
+                                </p>
+        
+                                <p class="text_card_turn">
+                                    при заказе <br>
+                                    индивидуальных размеров                            
+                                </p>
+                            </div>
                         </div>
+    
+    
+                        <div class="card_turn box">
+                            <div class="turn_cont_wrapper">
+                                <p class="title_card_turn">
+                                    Доставка и монтаж <br>
+                                    при необходимости
+                                </p>
+        
+                                <p class="text_card_turn">
+                                    от 1.000 р
+                                </p>
+                            </div>
+                        </div>
+    
+    
                     </div>
-
-
                 </div>
             </div>
     
@@ -1072,29 +1113,41 @@
             </p>
     
             <div class="block_our_worker">
-                <h2 class="tit_worker">
-                    Наши сотрудники -
-                </h2>
-                <h3 class="tit_sub_worker">
-                    подзаголовок про сотрудников
-                </h3>
+                <div class="wrapp_tit_our">
+                    <h2 class="tit_worker">
+                        Наши сотрудники -
+                    </h2>
+                    <h3 class="tit_sub_worker">
+                        подзаголовок про сотрудников
+                    </h3>
+                </div>
     
                 <div class="block_slider_text">
                     <div class="item_slider_text">
-                        <p>
+                        <p class="text_stock our_text_cust">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
                         </p>
                     </div>
                     <div class="item_slider_text">
-                        <p>
+                        <p class="text_stock our_text_cust">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
                         </p>
                     </div>
+
+                    <div class="wrapper_our_slide_arr">
+                        <a href="#" class="link_slide_our"></a>
+                        <a href="#" class="link_slide_our_right"></a>
+                    </div>
+                </div>
+
+                <div class="slide_bar">
+                    <div class="progress_bar"></div>
+                    <div class="active_bar"></div>
                 </div>
     
                 <div class="block_card_work">
                     <div class="worker_card">
-                        <img src="./" alt="img">
+                        <img src="./img/Rectangle 83.png" alt="img">
                         <p class="title_card_worker">
                             Должность длинная, 
     опыт 7 лет
@@ -1119,33 +1172,7 @@
                         </div>
                     </div>
                     <div class="worker_card">
-                        <img src="./" alt="img">
-                        <p class="title_card_worker">
-                            Должность длинная, 
-    опыт 7 лет
-                        </p>
-                        <p class="text_worker_card">
-                            Lorem ipsum dolor sit amet,  ipum consectetur adipiscing 
-                        </p>
-                        <div class="block_connection__worker">
-                            <div class="conn_phone">
-                                <p class="tit_conn">
-                                    Как связаться:
-                                </p>
-                                <p class="tit_phone_conn">
-                                    +7-999-888-41-21
-                                </p>
-                            </div>
-    
-                            <div class="social_conn">
-                                <a href="#" class="link_tel"></a>
-                                <a href="#" class="link_wats"></a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="worker_card">
-                        <img src="./" alt="img">
+                        <img src="./img/Rectangle 83.png" alt="img">
                         <p class="title_card_worker">
                             Должность длинная, 
     опыт 7 лет
@@ -1171,10 +1198,35 @@
                     </div>
     
                     <div class="worker_card">
-                        <img src="./" alt="img">
+                        <img src="./img/Rectangle 83.png" alt="img">
                         <p class="title_card_worker">
                             Должность длинная, 
     опыт 7 лет
+                        </p>
+                        <p class="text_worker_card">
+                            Lorem ipsum dolor sit amet,  ipum consectetur adipiscing 
+                        </p>
+                        <div class="block_connection__worker">
+                            <div class="conn_phone">
+                                <p class="tit_conn">
+                                    Как связаться:
+                                </p>
+                                <p class="tit_phone_conn">
+                                    +7-999-888-41-21
+                                </p>
+                            </div>
+    
+                            <div class="social_conn">
+                                <a href="#" class="link_tel"></a>
+                                <a href="#" class="link_wats"></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="worker_card">
+                        <img src="./img/Rectangle 83.png" alt="img">
+                        <p class="title_card_worker">
+                            Должность длинная,опыт 7 лет
                         </p>
                         <p class="text_worker_card">
                             Lorem ipsum dolor sit amet,  ipum consectetur adipiscing 
@@ -1199,15 +1251,25 @@
             </div>
     
             <div class="block_tabs_question">
-                <h2 class="tit_quest">
-                    Отвечаем на вопросы -
-                </h2>
-                <h3 class="tit_quest_sub">
-                    подзаголовок про ответы на вопросы
-                </h3>
+                <div class="wrapp_tit_our">
+                    <h2 class="tit_worker">
+                        Отвечаем на вопросы -
+                    </h2>
+                    <h3 class="tit_sub_worker">
+                        подзаголовок про ответы на вопросы
+                    </h3>
+                </div>
                 <div class="block_tab_cont">
                     <div class="tabs_all_list">
-                        <p></p>
+                       <a href="#" class="link_tabs_btn">Сколько времени занимает изготовление лестницы?</a>
+                       <a href="#" class="link_tabs_btn_active">Какая гарантия на лестницы?</a>
+                       <a href="#" class="link_tabs_btn">В чем особенности изготовления и монтажа лестницы на каркасе из металла?</a>
+                       <a href="#" class="link_tabs_btn">Как рассчитать высоту ступенек для лестниц?</a>
+                       <a href="#" class="link_tabs_btn">Можно ли заказать только каркас лестницы под самостоятельную отделку в Москве?</a>
+                       <a href="#" class="link_tabs_btn">Что удобнее: прямые маршевые лестницы с площадками или забежными ступенями?</a>
+                       <a href="#" class="link_tabs_btn">На каком этапе строительства лучше заказывать лестницу на металлическом каркасе?</a>
+                       <a href="#" class="link_tabs_btn">Какая высота перил считается безопасной?</a>
+                       <a href="#" class="link_tabs_btn">Стоит ли заказывать в дом лестницу с обшивкой из дерева? И почему?</a>
                     </div>
                     <div class="tab_info_cont">
                         <div class="text_tab_">
@@ -1219,16 +1281,16 @@
                             </p>
     
                             <div class="wrapper_quest">
-                                <p>
+                                <p class="text_stock quest_text_cust">
                                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                                 </p>
-                                <p>
+                                <p class="text_stock quest_text_cust">
                                     Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the.
                                 </p>
                             </div>
                         </div>
                         <div class="img_tab_">
-                            <img src="./" alt="img" class="worker_tabs_img">
+                            <img src="./img/Rectangle 82.png" alt="img" class="worker_tabs_img">
                             <p class="name_worker">Имя Сотрудника</p>
                             <p class="job">
                                 должность
