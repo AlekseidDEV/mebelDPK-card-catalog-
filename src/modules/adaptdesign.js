@@ -11,8 +11,15 @@ export const adaptivDesign = () => {
     const linkExpanClone = document.querySelector('.link_expand').cloneNode(true)
     const clonePriceBlock = document.querySelector('.price_buy_block').cloneNode(true)
 
+
+    const wrappTextBanners = document.querySelector('.wrapp_sub_text_banners')
+    const leftBlockPrice = document.querySelector('.left_cont_price')
+    const adaptStublock = document.querySelector('.adapt_block_stub')
+    const stubImg = document.querySelector('.stub_img_2')
+    const rightContPice = document.querySelector('.right_cont_price')
+
     
-    
+
 const adaptiveFunc = () => {
     if(window.innerWidth <='540'){
         leftBlock.prepend(gabariteItem)
@@ -41,6 +48,28 @@ const adaptiveFunc = () => {
     } else if(window.innerWidth >='532'){
         document.querySelector('.title_sup_mat').innerHTML = `Возможные материалы и цвета`
         document.querySelector('.title_sub_mat').innerHTML = `выберете наиболее подходящие для вашего дома`
+    }
+
+    if(window.innerWidth <= '522'){
+        document.querySelector('.tit_catch_choose').innerHTML = `цепляющий итоговый текст `
+    } else if(window.innerWidth >= '522'){
+        document.querySelector('.tit_catch_choose').innerHTML = `цепляющий <br> итоговый текст `
+    }
+
+    if(window.innerWidth <= '830'){
+        leftBlockPrice.appendChild(wrappTextBanners)
+        adaptStublock.appendChild(stubImg)
+    } else if(window.innerWidth >= '830'){
+        rightContPice.appendChild(stubImg)
+        rightContPice.appendChild(wrappTextBanners)
+    }
+
+    if(window.innerWidth <= '440'){
+        document.querySelector('.title_sert').innerHTML = ` Наша продукция сертифицирована
+        по ГОСТ`
+    } else if(window.innerWidth >='440'){
+        document.querySelector('.title_sert').innerHTML = ` Наша продукция<br> сертифицирована<br>
+        по ГОСТ`
     }
 }
 
