@@ -1,4 +1,5 @@
 import { adaptivDesign } from './modules/adaptdesign'
 
+const adaptive = new adaptivDesign
 
-adaptivDesign()
+adaptive.init()

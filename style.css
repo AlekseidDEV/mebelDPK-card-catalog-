@@ -2703,15 +2703,6 @@ margin-top: 80px;
     }
 }
 
-
-
-/* ДОРАБОТКА */
-.discount_block{
-    display: none;
-}
-/* ДОРАБОТКА */
-
-
 /* card_section_lest */
 
 @media  (max-width: 1500px) {
@@ -3227,11 +3218,14 @@ margin-top: 80px;
     .card_block_disc{
         justify-content: center;
         gap: 20px;
+        flex-direction: row-reverse;
     }
 
     .title_disc{
         font-size: calc(28px + (22 + 22 * 0.7) * ((100vw - 260px) / 1500));
     }
+
+
 }
 
 @media (max-width: 1060px){
