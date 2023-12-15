@@ -53,8 +53,10 @@ export class adaptivDesign {
         }
 
         if (window.innerWidth <= "440") {
-            document.querySelector(".title_sert").innerHTML = ` Наша продукция сертифицированапо ГОСТ`;
+            document.querySelector(".title_sert").innerHTML = ` Наша продукция сертифицирована по ГОСТ`;
         } else if (window.innerWidth >= "440") {
+            document.querySelector(".title_sert").innerHTML = ` Наша продукция<br> сертифицирована<br>по ГОСТ`;
+        } else if (window.innerWidth >= "310") {
             document.querySelector(".title_sert").innerHTML = ` Наша продукция<br> сертифицирована<br>по ГОСТ`;
         }
     }
@@ -68,6 +70,8 @@ export class adaptivDesign {
             this.rightContPice.appendChild(this.wrappTextBanners);
         }
     }
+
+
 
     adaptiveFunc = () => {
         this.adaptCard()
