@@ -1,6 +1,7 @@
 /*  =========================================================
                 МОИ НАСТОЙКИ (НЕ КАСАЮТСЯ МАКЕТА)
 ============================================================*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,6 +37,39 @@ body {
 ============================================================*/
 
 /*  =========================================================*/
+
+.grey_title{
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 1s, transform 1s; 
+}
+
+.grey_title.grey_viss_tit{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.green_title{
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: opacity 1s, transform 1s;
+}
+
+.green_title.green_tit_viss{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+  .card_material_animate.card_visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card_material_animate{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s, transform 1s;
+  }
 
 /* общий стили для текстов и прочей ебалы */
 .text_stock {
@@ -263,6 +297,10 @@ body {
     height: 37px;
 }
 
+.slide_item:hover{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
 .tizer_sub_char_item {
     background: #fff;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
@@ -275,6 +313,12 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     max-width: 170px;
+    cursor: default;
+    transition: 0.5s;
+}
+
+.tizer_sub_char_item:hover{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.30);
 }
 
 .tizer_char_text {
@@ -329,6 +373,15 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.choice_link:focus{
+    border: 3px solid #2E9375;
+}
+
+
+.link_choice_width:focus{
+    border: 3px solid #2E9375;
 }
 
 .cell_color_choice {
@@ -430,7 +483,30 @@ body {
     font-weight: 700;
     line-height: normal;
     display: flex;
+    position: relative;
+    overflow: hidden;
 }
+
+
+
+.hover_btn::before{
+    content: '';
+  position: absolute;
+  height: 170px;
+  width: 50px;
+  background : #fff;
+  left: -55px;
+  display: flex;
+  top: -70px;
+  transform: rotate(20deg);
+  transition: all .4s;
+  opacity: 0.3;
+}
+
+.hover_btn:hover:before {
+    left:110%;
+  }
+
 
 .btn_buy_small {
     display: none;
@@ -443,6 +519,7 @@ body {
 .wrapper_price_buy {
     display: flex;
     gap: 20px 40px;
+    margin-bottom: 10px;
 }
 
 .other_calc_text {
@@ -452,8 +529,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-decoration-line: underline;
-    margin-top: 10px;
+    text-decoration-line: underline !important;
 }
 
 .wrapp_btn_sign {
@@ -474,6 +550,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    position: relative;
+    overflow: hidden;
 }
 
 .video1 {
@@ -675,6 +753,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    overflow: hidden;
+    position: relative;
 }
 
 .title_color_typ {
@@ -1187,6 +1267,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    position: relative;
+    overflow: hidden;
 }
 /* ======================================================== */
 
@@ -1630,28 +1712,36 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    /*  */
+    max-width: 357px;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    padding-left: 40px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #2e9375;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}  
+
+.btn_write_whats::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(./img/whats_svg.svg) no-repeat center;
+    display: flex;
+    top: 50%;
+    left: 10px;
+    transform: translate(0%, -50%);
 }
 
 .wrapp_btn_wha {
     margin-top: 60px;
-    padding: 20px 40px;
-    align-items: center;
-    display: flex;
-    gap: 10px 10px;
-    background: #2e9375;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
-    max-width: 357px;
-    width: 100%;
 }
 
-.icon_whats_btn {
-    width: 20px;
-    height: 20px;
-    background: url(./img/whats_svg.svg);
-    display: flex;
-    top: 0;
-    left: -20px;
-}
+
 
 .text_bann_sup {
     color: #000;
@@ -1753,17 +1843,37 @@ body {
     position: relative;
 }
 
-.link_play_factory::after {
+.happ_photo_text{
+    position: absolute;
+    color: #FFF;
+font-family: "Montserrat";
+font-size: 26px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+/* back */
+background: #2E9375;
+padding: 10px 40px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+top: 40px;
+}
+
+
+
+.link_play_factory{
     content: "";
     width: 70px;
     height: 70px;
-    background: url(./img/play.svg) no-repeat center;
+    background: url(./img/play.svg) no-repeat center/cover;
     display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .block_arrow_img_fac {
@@ -1789,6 +1899,7 @@ body {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 1;
 }
 /* ========================================================= */
 
@@ -1849,6 +1960,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    position: relative;
+    overflow: hidden;
 }
 
 .wrapper_sert_btn {
@@ -1975,6 +2088,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    position: relative;
+    overflow: hidden;
 }
 /* ======================================================== */
 
@@ -2322,6 +2437,10 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.link_tabs_btn:hover{
+    color: rgb(131, 127, 127);
 }
 
 .block_tab_cont {
@@ -3373,6 +3492,16 @@ body {
     .sub_title_sert {
         font-size: 23px;
     }
+
+    .happ_photo_text{
+        top: 20px;
+        color: #FFF;
+font-family: "Montserrat";
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+    }
 }
 
 @media (max-width: 450px) {
@@ -3748,6 +3877,10 @@ body {
     .cont_ch {
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    .happ_photo_text{
+        padding: 10px;
     }
 }
 

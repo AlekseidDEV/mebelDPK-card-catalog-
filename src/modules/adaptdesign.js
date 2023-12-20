@@ -71,8 +71,6 @@ export class adaptivDesign {
         }
     }
 
-
-
     adaptiveFunc = () => {
         this.adaptCard()
         this.removeNodes();
