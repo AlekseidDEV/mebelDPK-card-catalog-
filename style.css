@@ -20,6 +20,7 @@ body {
 
 .bitrix_cont_zero {
     margin-top: 40px;
+    overflow: auto;
 }
 
 .bitrix_cont_zero a {
@@ -67,8 +68,35 @@ body {
 
   .card_material_animate{
     opacity: 0;
+    transform: translateY(500px);
+    transition: opacity 1s, transform 1s;
+  }
+
+  .block_swap_dowm.swap_visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .block_swap_dowm{
+    opacity: 0;
     transform: translateY(200px);
     transition: opacity 1s, transform 1s;
+  }
+
+  .link_choice_width:hover{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
+  }
+
+  .cell_color_choice:hover{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
+  }
+
+  .cell_color_type_choice:hover{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
+  }
+
+  .item_color_choice:hover{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
   }
 
 /* общий стили для текстов и прочей ебалы */
@@ -110,6 +138,8 @@ body {
 .center_img_slide {
     max-width: 745px;
     width: 100%;
+    transition:  0.5s ease-in-out;
+    display: flex;
 }
 
 .right_cont_cad {
@@ -122,23 +152,27 @@ body {
     width: 100%;
 }
 
-.slide_bar {
-    position: relative;
-    width: 100%;
-}
-
-.progress_bar {
-    height: 10px;
+.slide_bar{
     background: #575757;
+    width: 100%;
+    height: 10px;
+    display: flex;
 }
 
-.active_bar {
-    width: 149px;
+.progress_bar{
+    width: 100%;
     height: 10px;
+    cursor: pointer;
+}
+
+
+
+.active_bar{
+    width: 100%;
+    height: 10px;
+    display: flex;
     background: #2e9375;
-    position: absolute;
-    top: 0;
-    left: 0;
+    cursor: pointer;
 }
 
 .center_block_slide {
@@ -297,6 +331,10 @@ body {
     height: 37px;
 }
 
+.slide_item{
+    cursor: pointer;
+}
+
 .slide_item:hover{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
@@ -375,9 +413,7 @@ body {
     line-height: normal;
 }
 
-.choice_link:focus{
-    border: 3px solid #2E9375;
-}
+
 
 
 .link_choice_width:focus{
@@ -1403,8 +1439,7 @@ body {
     margin-top: 130px;
 }
 
-.wrapper_card_choose {
-}
+
 
 .title_us_sup {
     color: #2e9375;
@@ -2282,12 +2317,14 @@ top: 40px;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
-    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    padding-left: 250px;
 }
 
 .wrapp_tit_our {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .our_text_cust {
@@ -2702,7 +2739,7 @@ top: 40px;
 
 .wrapp_tit_que {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .tit_worker_que {
@@ -2721,7 +2758,9 @@ top: 40px;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
-    margin-top: 80px;
+    justify-content: end;
+    display: flex;
+    
 }
 
 .img_smal_sert {
@@ -2902,6 +2941,10 @@ top: 40px;
         top: 80%;
         left: 0;
         transform: translate(0, -60%);
+    }
+    
+    .tit_sub_worker {
+        padding-left: 0;
     }
 }
 
