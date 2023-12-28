@@ -1,6 +1,8 @@
 import { adaptivDesign } from './modules/adaptdesign'
 import { animateBlocks } from './modules/animateBlocks'
+import { gallOpened } from './modules/gallOpened'
 import { sliderCard } from './modules/sliderCard'
+import { zoomFunc } from './modules/zoomedImg'
 
 const adaptive = new adaptivDesign
 
@@ -55,4 +57,7 @@ window.addEventListener('load', () => {
 
 adaptive.init()
 sliderCard()
+gallOpened()
+zoomFunc()
+
 

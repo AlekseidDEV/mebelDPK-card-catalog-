@@ -20,7 +20,7 @@ body {
 
 .bitrix_cont_zero {
     margin-top: 40px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .bitrix_cont_zero a {
@@ -37,8 +37,181 @@ body {
                         СКРЫТЫЕ БЛОКИ
 ============================================================*/
 
-/*  =========================================================*/
 
+.gallery_window.gw_act{
+    opacity: 1;
+    transition: .3s;
+    visibility: visible;
+}
+
+
+.gallery_window{
+    position: fixed;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    visibility: hidden;
+}
+
+
+.count_trumb{
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    color: #575757;
+}
+
+.galery_wrapper_cont{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: relative;
+    display: flex;
+}
+
+.close_wind{
+    background: url(./img/closeGrey.svg) no-repeat center;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    background-size: cover;
+}
+
+.items_big_slides{
+    display: flex;
+}
+
+.block_trumbnails{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider_window{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.left_gall{
+    width: 25px;
+    height: 40px;
+    display: flex;
+    background: url(./arrow_grey/left_arr_not.svg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.left_gall:hover{
+    background: url(./arrow_grey/left_arr_act.svg);
+}
+
+.right_gall:hover{
+    background: url(./arrow_grey/right_arr_act.svg);
+}
+
+.right_gall{
+    width: 25px;
+    height: 40px;
+    display: flex;
+    background: url(./arrow_grey/right_arr_not.svg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.items_big_slides{
+    overflow: hidden;
+}
+
+.selec_drag{
+    opacity: 0.2;
+}
+
+.trumb_image{
+    cursor: zoom-in;
+    max-width: 735px;
+    max-height: 635px;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    transform: translate();
+}
+
+
+.act_trumb_img{
+    opacity: 1;
+    transition: 0.6s;
+    position: static;
+}
+
+
+.block_arrow_gall{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 0;
+}
+
+.close_wind:hover{
+    background: url(./img/greenClose.svg) no-repeat center;
+    transition: 0.4s;
+}
+
+.cont_wrapper_items{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+}
+
+.trumb_gall_img{
+    max-width: 100px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.trumb_not{
+    position: relative;
+}
+
+.trumb_not::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    max-width: 100px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.trumb_icon{
+    cursor: pointer;
+}
+
+
+/*  =========================================================*/
 .grey_title{
     opacity: 0;
     transform: translateX(80px);
@@ -130,16 +303,38 @@ body {
     margin-bottom: 15px;
 }
 
+.items_slide{
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    max-height: 635px;
+    cursor: pointer;
+}
+
+.items_slide img{
+    object-fit: contain;
+}
+
 .img_other_slide {
     max-width: 149px;
     width: 100%;
 }
 
 .center_img_slide {
+    opacity: 0;
+    width: 100%;
+    transition: opacity 0.7s;
+    height: 100%;
+}
+
+.active_item{
+    opacity: 1;
+    transition: opacity 0.7s;
     max-width: 745px;
     width: 100%;
-    transition:  0.5s ease-in-out;
-    display: flex;
+    position: absolute;
+    z-index: 1;
 }
 
 .right_cont_cad {
@@ -179,27 +374,23 @@ body {
     position: relative;
 }
 
+
 .other_slides {
     display: flex;
 }
 
-.block_arrow_slider_card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 745px;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    left: 0;
-}
+
 
 .arrow_grey_slide_left {
     width: 25px;
     height: 40px;
     display: flex;
     background: url(./arrow_grey/left_arr_not.svg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate(0%, -50%);
 }
 
 .arrow_grey_slide_left:hover {
@@ -210,7 +401,12 @@ body {
     width: 25px;
     height: 40px;
     display: flex;
+    position: absolute;
     background: url(./arrow_grey/right_arr_not.svg);
+    transform: translate(0%, -50%);
+    top: 50%;
+    right: 0;
+    z-index: 2;
 }
 .arrow_grey_slide_right:hover {
     background: url(./arrow_grey/right_arr_act.svg);
@@ -2636,7 +2832,7 @@ top: 40px;
 
 .wrapper_text_rall {
     display: flex;
-    gap: 20px 10px;
+    gap: 20px 20px;
 }
 
 .options {
@@ -3103,6 +3299,31 @@ top: 40px;
 }
 
 @media (max-width: 850px) {
+
+    .block_trumbnails{
+        position: static;
+        transform: none;
+    }
+
+    .block_trumbnails img{
+        object-fit: contain;
+    }
+
+    .slider_window{
+        position: static;
+        transform: none;
+        display: flex;
+    }
+
+    .absolute_bottom{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .cont_wrapper_items{
+        justify-content: center;
+    }
+
     .wrapp_img_sert {
         display: none;
     }

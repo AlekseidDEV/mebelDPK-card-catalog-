@@ -1,7 +1,7 @@
 export const sliderCard = () => {
     const slides = document.querySelectorAll('.slide_item')
-    const imgCenter = document.querySelector('.center_img_slide')
     const slideBar = document.getElementById('cardBar')
+    const centerSlides = document.querySelectorAll('.center_img_slide')
 
     let counter = 0
 
@@ -22,9 +22,11 @@ export const sliderCard = () => {
         })
     }
 
-    const changeMainSlied = (elem) => {
-        const urlNew = elem.getAttribute('src')
-        imgCenter.src = urlNew
+    const changeMainSlied = (count) => {
+        const activeMainSlide = document.querySelector('.active_item')
+
+        activeMainSlide.classList.remove('active_item')
+        centerSlides[count].classList.add("active_item")
     }
 
     const changeBar = (indexStrip) => {
@@ -53,9 +55,9 @@ export const sliderCard = () => {
                
 
                 changeBar(count || index)
+                changeMainSlied(count || index)
             }
         })
-        changeMainSlied(target.querySelector('img'))
     }
 
     const prevSlide = () => {
