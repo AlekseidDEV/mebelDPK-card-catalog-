@@ -14,15 +14,18 @@ export const zoomFunc = () => {
         zoomState = !zoomState
 
         if(zoomState){
-            elementZoom.style.transform = 'scale(1.6)'
+            elementZoom.classList.add('zoomebled')
         } else{
-            elementZoom.style.transform = 'scale(1)'
+            elementZoom.classList.remove('zoomebled')
         }
     }
 
-
+    // console.log(elementDrag.getBoundingClientRect());
     zoomClickZone.addEventListener('click', zoomTransform)
-    zoomClickZone.addEventListener('mousedown', () => {
-        console.log("test");
+    elementDrag.addEventListener('dragstart', (e) => {
+        const elem = document.createElement('div')
+        document.body.appendChild(elem)
+
+        e.dataTransfer.setDragImage(f, 500, 100)
     })
 }
