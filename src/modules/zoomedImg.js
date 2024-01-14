@@ -1,31 +1,50 @@
+import Moveable from "moveable";
 
 export const zoomFunc = () => {
+    const zoneAnimate = document.querySelector('.items_big_slides')
 
-    const zoomClickZone = document.querySelector('.items_big_slides')
-    const elementDrag = document.querySelector('.act_trumb_img')
-    
-    let zoomState = false
+    const moveable = new Moveable(document.querySelector('.items_big_slides'), {
+        target: '',
+        draggable: true,
+        container: document.querySelector('.items_big_slides'),
+    })
 
-    elementDrag.draggable = true
+    let clicker = false
 
-    const zoomTransform = () => {
-        const elementZoom = document.querySelector('.act_trumb_img')
 
-        zoomState = !zoomState
+    const zoomImg = (e) => {
+        
 
-        if(zoomState){
-            elementZoom.classList.add('zoomebled')
+        clicker = !clicker
+
+        
+        if(clicker){
+            e.target.classList.add('zoomebled')
+            e.target.style.cursor = 'grab'
         } else{
-            elementZoom.classList.remove('zoomebled')
+            e.target.classList.remove('zoomebled')
+            e.target.style.cursor = 'zoom-in'
         }
     }
 
-    // console.log(elementDrag.getBoundingClientRect());
-    zoomClickZone.addEventListener('click', zoomTransform)
-    elementDrag.addEventListener('dragstart', (e) => {
-        const elem = document.createElement('div')
-        document.body.appendChild(elem)
+    zoneAnimate.addEventListener('click', zoomImg)
+  
 
-        e.dataTransfer.setDragImage(f, 500, 100)
+    zoneAnimate.addEventListener('mouseover', (e) => {
+        if(e.target.matches('.act_trumb_img')){
+            moveable.target = e.target
+        }
+    })
+
+
+    moveable.on('drag', ({target,  left, top}) => {
+        target.style.left = `${left}px`;
+        target.style.top = `${top}px`;
+        target.style.cursor = 'grabbing'
+    })
+
+
+    moveable.on('dragEnd', ({target}) => {
+        target.style.cursor = 'grab'
     })
 }

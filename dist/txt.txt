@@ -1,0 +1,8 @@
+/*Обновление страницы, чтобы правильно срабатывал редирект в быстрых фильтрах (SEO умного фильтра)*/
+$(document).ready(function(){
+$(".label_block").on('click', function(){
+setTimeout(function(){
+location.reload();
+}, 1000);
+})
+})

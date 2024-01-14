@@ -18,6 +18,15 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+.rCS1w3zcxh .moveable-control.moveable-origin{
+    border-color: rgba(0, 128, 0, 0) !important;
+    background: rgba(0, 128, 0, 0) !important;
+    }
+    
+    .rCS1w3zcxh{
+        --moveable-color: #ffffff00 !important;
+    }
+
 .bitrix_cont_zero {
     margin-top: 40px;
     overflow: hidden;
@@ -86,9 +95,7 @@ body {
     background-size: cover;
 }
 
-.items_big_slides{
-    display: flex;
-}
+
 
 .block_trumbnails{
     position: absolute;
@@ -98,6 +105,8 @@ body {
     width: 70%;
     display: flex;
     justify-content: center;
+    max-height: 626px;
+    height: 100%;
 }
 
 .slider_window{
@@ -139,7 +148,12 @@ body {
 
 .items_big_slides{
     overflow: hidden;
+    position: relative;
+    width: 735px;
+    height: 620px;
+    display: flex;
 }
+
 
 .selec_drag{
     opacity: 0.2;
@@ -156,14 +170,19 @@ body {
     width: 100%;
     opacity: 0;
     position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
 }
 
 
 .act_trumb_img{
     opacity: 1;
     transition: 0.6s;
-    position: static;
+    position: absolute;
     z-index: 111;
+    top: 0;
+    left: 0;
 }
 
 
@@ -222,7 +241,7 @@ body {
     transition: opacity 1s, transform 1s; 
 }
 
-.grey_title.grey_viss_tit{
+.grey_title.tit_viss{
     opacity: 1;
     transform: translateX(0);
 }
@@ -233,7 +252,7 @@ body {
     transition: opacity 1s, transform 1s;
 }
 
-.green_title.green_tit_viss{
+.green_title.tit_viss{
     opacity: 1;
     transform: translateX(0);
 }
@@ -3168,11 +3187,35 @@ top: 40px;
         margin-top: 20px;
         margin-left: auto;
     }
+
+    .items_big_slides{
+        width: 650px;
+        height: 560px;
+    }
+
+    .trumb_image{
+        max-width: 650px;
+        height: 560px;
+    }
 }
 
 @media (max-width: 1035px) {
     .not_img_adapt {
         display: none;
+    }
+
+    .items_big_slides{
+        width: 450px;
+        height: 400px;
+    }
+
+    .trumb_image{
+        max-width: 450px;
+        height: 400px;
+    }
+
+    .block_trumbnails{
+        align-items: center;
     }
 }
 
@@ -3539,6 +3582,14 @@ top: 40px;
     .adapt_block_stub {
         height: 350px;
     }
+
+    .items_big_slides{
+        height: 360px;
+    }
+
+    .trumb_image{
+        height: 357px
+    }
 }
 
 @media (max-width: 587px) {
@@ -3761,6 +3812,17 @@ top: 40px;
         font-size: 23px;
     }
 
+    .items_big_slides{
+        max-height: 320px;
+        max-width: 300px;
+    }
+
+    .trumb_image{
+        height: 320px;
+        max-width: 300px;
+    }
+
+
     .happ_photo_text{
         top: 20px;
         color: #FFF;
@@ -3857,6 +3919,14 @@ line-height: normal;
         text-align: left;
         font-size: 28px;
     }
+
+    .items_big_slides{
+        max-height: 280px;
+    }
+
+    .trumb_image{
+        height: 280px;
+    }
 }
 
 @media (max-width: 414px) {
@@ -3936,18 +4006,11 @@ line-height: normal;
         font-size: 18px;
     }
 
-    #div_text_factory {
-        overflow: hidden;
-        height: 106px;
-    }
-
     #div_text_factory_ {
         overflow: hidden;
         height: 106px;
-    }
-
-    #div_text_factory {
         margin-bottom: 20px;
+        height: 106px;
     }
 
     .tit_factory_img {
@@ -3979,10 +4042,6 @@ line-height: normal;
         text-align: center;
     }
 
-    .txt_dick_card {
-        text-align: center;
-    }
-
     .wrapper_card_choose:nth-child(2),
     .wrapper_card_choose:nth-child(3),
     .wrapper_card_choose:nth-child(4),
@@ -3993,6 +4052,7 @@ line-height: normal;
 
     .card_block_turn {
         margin-top: 22px;
+        flex-wrap: nowrap;
     }
 
     .wrapp_flow_turn {
@@ -4000,12 +4060,10 @@ line-height: normal;
         overflow: hidden;
     }
 
-    .card_block_turn {
-        flex-wrap: nowrap;
-    }
-
     .card_turn {
         width: 260px;
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
 
     .calc::after {
@@ -4014,11 +4072,6 @@ line-height: normal;
 
     .title_card_turn {
         font-size: 18px;
-    }
-
-    .card_turn {
-        padding-top: 26px;
-        padding-bottom: 26px;
     }
 
     .title_card_top,
@@ -4079,6 +4132,10 @@ line-height: normal;
 
     .wrapper_block_material {
         margin-top: 30px;
+    }
+
+    .block_trumbnails{
+        max-height: 550px;
     }
 }
 

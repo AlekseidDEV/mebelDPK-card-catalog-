@@ -5,7 +5,7 @@ export const gallOpened = () => {
     const trumbIcons = document.querySelectorAll('.trumb_icon')
     const countText = document.querySelector('.count_trumb')
 
- 
+    
 
     let count = 0
 
@@ -32,6 +32,7 @@ export const gallOpened = () => {
         countText.textContent = `${count + 1}/5`
 
         activeSlide.classList.remove(classElem)
+        activeSlide.classList.remove('zoomebled')
         array[count].classList.add(classElem)
     }
 
@@ -49,6 +50,7 @@ export const gallOpened = () => {
         changeIcon(count, document.querySelector('.trumb_act'))
 
         activeSlide.classList.remove(classElem)
+        activeSlide.classList.remove('zoomebled')
         array[count].classList.add(classElem)
     }
 
@@ -58,6 +60,8 @@ export const gallOpened = () => {
 
         trumbIcons.forEach((elem, index) => {
             if(elem === target){
+                count = index
+
                 elem.classList.remove(delClass)
                 elem.classList.add(active)
 
@@ -65,6 +69,7 @@ export const gallOpened = () => {
                 activeIcon.classList.add(delClass)
 
                 activeSlide.classList.remove('act_trumb_img')
+                activeSlide.classList.remove('zoomebled')
                 array[index].classList.add('act_trumb_img')
 
                 countText.textContent = `${index + 1}/5`

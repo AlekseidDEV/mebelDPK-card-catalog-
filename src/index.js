@@ -2,6 +2,7 @@ import { adaptivDesign } from './modules/adaptdesign'
 import { animateBlocks } from './modules/animateBlocks'
 import { gallOpened } from './modules/gallOpened'
 import { sliderCard } from './modules/sliderCard'
+import { sliders } from './modules/sliders'
 import { zoomFunc } from './modules/zoomedImg'
 
 const adaptive = new adaptivDesign
@@ -10,6 +11,13 @@ const allsmalTitle = document.querySelectorAll('.grey_title')
 const allBigTitle = document.querySelectorAll('.green_title')
 const allBlocks = document.querySelectorAll('.card_material_animate')
 const swapBlock = document.querySelectorAll('.block_swap_dowm')
+const bitrixBlock = document.querySelector('.bitrix_cont_zero')
+
+const arrSlidersId = [
+    "slider-1",
+    "slider-2",
+    "slider-3",
+]
 
 
 
@@ -51,8 +59,21 @@ window.addEventListener('load', () => {
         swapBlock.forEach((elem) => {
             elem.classList.remove('block_swap_dowm')
         })
-        
     }
+})
+
+bitrixBlock.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    const targetElem = e.target.closest("[id]") !== null ? e.target.closest("[id]").id : "null_id"
+
+    arrSlidersId.forEach((item) => {
+        if(targetElem === item){
+            sliders(e.target.closest('[id]').id)
+        } else{
+            return
+        }
+    })
 })
 
 adaptive.init()
