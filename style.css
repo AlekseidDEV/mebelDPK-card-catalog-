@@ -24,14 +24,7 @@ body {
     display: flex;
 }
 
-.rall_img.rall_img_act{
-    opacity: 1;
-}
 
-.rall_img{
-    opacity: 0;
-    transition: opacity 0.7s;
-}
 
 .rCS1w3zcxh .moveable-control.moveable-origin{
     border-color: rgba(0, 128, 0, 0) !important;
@@ -1407,6 +1400,12 @@ body {
     margin-bottom: 10px;
     max-width: 493px;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+.active_slide{
+    opacity: 1;
 }
 /* ======================================================== */
 
@@ -2965,6 +2964,16 @@ top: 40px;
     max-width: 367px;
     width: 100%;
     opacity: 0;
+}
+
+.width_items{
+    max-width: 367px;
+    width: 100%;
+}
+
+.width_items_big{
+    max-width: 1122px;
+    width: 100%;
 }
 
 .img_card_proj.img_card_proj_act{

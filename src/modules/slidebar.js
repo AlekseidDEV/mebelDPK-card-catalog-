@@ -2,10 +2,10 @@ export const slideBar = (arr) => {
 
     const addStrip = (element) => {
         
-        const countStrip = element.querySelectorAll('.wrapp_items_slides > img').length
-        const slideBar = element.querySelector('.slide_bar')
+        const countStrip = element.querySelectorAll('.wrapp_items_slides > *').length
 
-        console.log(slideBar);
+        
+        const slideBar = element.querySelector('.slide_bar')
 
         for(let i = 0; i <= countStrip - 1; i++){
             const newStrip = document.createElement('div')

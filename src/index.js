@@ -12,19 +12,20 @@ const allsmalTitle = document.querySelectorAll('.grey_title')
 const allBigTitle = document.querySelectorAll('.green_title')
 const allBlocks = document.querySelectorAll('.card_material_animate')
 const swapBlock = document.querySelectorAll('.block_swap_dowm')
-const bitrixBlock = document.querySelector('.bitrix_cont_zero')
+
 
 const arrSlidersId = [
     "slider-1",
     "slider-2",
     "slider-3",
     "slider-4",
-    "slide-5"
+    "slide-5",
+    "auto_slide-1",
+    "auto_slide-2",
+    "auto_slide-3",
+    "auto_slide-4",
+    "slide-6"
 ]
-
-// id="auto_slide-2"
-
-
 
 window.addEventListener('load', () => {
     if(window.innerWidth >= '850'){
@@ -67,20 +68,7 @@ window.addEventListener('load', () => {
     }
 })
 
-bitrixBlock.addEventListener('click', (e) => {
-    e.preventDefault()
-
-    const targetElem = e.target.closest("[id]") !== null ? e.target.closest("[id]").id : "null_id"
-
-    arrSlidersId.forEach((item) => {
-        if(targetElem === item){
-            sliders(e.target.closest('[id]').id)
-        } else{
-            return
-        }
-    })
-})
-
+sliders()
 adaptive.init()
 sliderCard()
 gallOpened()
