@@ -60,7 +60,6 @@ export const animateBlocks = (
     const swimCard = (classbBlock, classElem, time = 400) => {
         const cards = classbBlock.querySelectorAll(classElem);
 
-        console.log(cards);
         cards.forEach((card, index) => {
             const delay = time * index;
 

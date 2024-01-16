@@ -1,6 +1,7 @@
 import { adaptivDesign } from './modules/adaptdesign'
 import { animateBlocks } from './modules/animateBlocks'
 import { gallOpened } from './modules/gallOpened'
+import { slideBar } from './modules/slidebar'
 import { sliderCard } from './modules/sliderCard'
 import { sliders } from './modules/sliders'
 import { zoomFunc } from './modules/zoomedImg'
@@ -17,7 +18,11 @@ const arrSlidersId = [
     "slider-1",
     "slider-2",
     "slider-3",
+    "slider-4",
+    "slide-5"
 ]
+
+// id="auto_slide-2"
 
 
 
@@ -80,5 +85,6 @@ adaptive.init()
 sliderCard()
 gallOpened()
 zoomFunc()
+slideBar(arrSlidersId)
 
 
