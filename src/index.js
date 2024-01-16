@@ -22,7 +22,7 @@ const arrSlidersId = [
 
 
 window.addEventListener('load', () => {
-    if(window.innerWidth >= '950'){
+    if(window.innerWidth >= '850'){
         animateBlocks(
             '.wrapper_block_material', 
             '.green_title', '.grey_title', 
