@@ -119,7 +119,7 @@ export const animateBlocks = (
                         break
 
                     case entry.target.classList.contains(cardWork.slice(1)):
-                        swimCard(entry.target, "div", 40);
+                        swimCard(entry.target, ".worker_card", 40);
                         observer.unobserve(entry.target);
                         break
                 } 

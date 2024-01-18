@@ -1,10 +1,14 @@
 import { adaptivDesign } from './modules/adaptdesign'
 import { animateBlocks } from './modules/animateBlocks'
+import { autoSlide } from './modules/autoslide'
 import { gallOpened } from './modules/gallOpened'
 import { slideBar } from './modules/slidebar'
 import { sliderCard } from './modules/sliderCard'
 import { sliders } from './modules/sliders'
 import { zoomFunc } from './modules/zoomedImg'
+import { selectMenu } from './modules/selectListOpen'
+import { optionsChoice } from './modules/choiceOptions'
+import { expandLink } from './modules/expandlink'
 
 const adaptive = new adaptivDesign
 
@@ -20,11 +24,10 @@ const arrSlidersId = [
     "slider-3",
     "slider-4",
     "slide-5",
-    "auto_slide-1",
+    "slider-7",
     "auto_slide-2",
     "auto_slide-3",
     "auto_slide-4",
-    "slide-6"
 ]
 
 window.addEventListener('load', () => {
@@ -68,11 +71,15 @@ window.addEventListener('load', () => {
     }
 })
 
-sliders()
 adaptive.init()
 sliderCard()
 gallOpened()
 zoomFunc()
 slideBar(arrSlidersId)
+sliders(arrSlidersId)
+autoSlide(4000)
+selectMenu()
+optionsChoice()
+expandLink()
 
 

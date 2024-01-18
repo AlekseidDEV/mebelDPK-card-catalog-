@@ -53,27 +53,27 @@
                             </div>
                         </div>
 
-                        <div class="block_video_left">
+                        <div id="slider-7" class="block_video_left">
                             <div class="block_text_sup_bar">
                                 <p class="sup_title_video">Заголовок с призывом посмотреть видео</p>
                                 <div class="wrapper_arrow_video">
-                                    <a href="#" class="arrow_grey_slide_left_"></a>
-                                    <a href="#" class="arrow_grey_slide_right_"></a>
+                                    <a href="#" class="arrow_green_slide_left"></a>
+                                    <a href="#" class="arrow_green_slide_right"></a>
                                 </div>
                             </div>
                            
 
-                            <div id="auto_slide-1" class="block_wrapper_video">
+                            <div class="block_wrapper_video">
                                 <div class="slide_bar">
                                 
                                 </div>
                                 <div class="wrapp_items_slides">
-                                    <img class="video1 auto_none auto_act" src="./img/video1.png" alt="img">
-                                    <img class="video1 auto_none" src="./img/video1.png" alt="img">
-                                    <img class="video1 auto_none" src="./img/video1.png" alt="img">
-                                    <img class="video1 auto_none" src="./img/video1.png" alt="img">
-                                    <img class="video1 auto_none" src="./img/video1.png" alt="img">
-                                    <img class="video1 auto_none" src="./img/video1.png" alt="img">
+                                    <img class="video1 active_slide" src="./img/video1.png" alt="img">
+                                    <img class="video1" src="./img/video1.png" alt="img">
+                                    <img class="video1" src="./img/video1.png" alt="img">
+                                    <img class="video1" src="./img/video1.png" alt="img">
+                                    <img class="video1" src="./img/video1.png" alt="img">
+                                    <img class="video1" src="./img/video1.png" alt="img">
                                 </div>
                                 <a href="#" class="link_play"></a>
                             </div>
@@ -104,8 +104,11 @@
                                 <p class="strip_text_char"><b>Облицовка ступеней</b> — ступеньпустотелая с носиком</p>
                                 <p class="strip_text_char"><b>Отделка подступенок</b> — ДПК доска</p>
                                 <p class="strip_text_char"><b>Отделка боковин</b> — сайдингом ДПК</p>
+                                <p class="strip_text_char"><b>Облицовка ступеней</b> — ступеньпустотелая с dsfasdf</p>
+                                <p class="strip_text_char"><b>Отделка подступенок</b> — ДПК доска</p>
+                                <p class="strip_text_char"><b>Отделка боковин</b> — сайдингом ДПК</p>
                             </div>
-                            <a href="#" class="link_expand">Развернуть</a>
+                            <a data-link_block=".block_char_text" href="#" class="link_expand">Развернуть</a>
                         </div>
     
                         <div class="tizer_sub_char_block">
@@ -459,8 +462,8 @@
 
                             <div class="wrapp_items_slides">
                                 <img class="rall_img active_slide" src="./img/image.png" alt="img">
-                                <img class="rall_img" src="./img/image.png" alt="img">
-                                <img class="rall_img" src="./img/image.png" alt="img">
+                                <img class="rall_img" src="./img/image1.png" alt="img">
+                                <img class="rall_img" src="./img/image3.png" alt="img">
                                 <img class="rall_img" src="./img/image.png" alt="img">
                             </div>
 
@@ -573,6 +576,10 @@
                             <p class="text_stock">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu</p>
                         </div>
                     </div>
+
+                    <a data-link_block=".wrapper_text_rall" class="link_expand link_expand_rall" href="#">Развернуть</a>
+
+                    
                 </div>
             </div>
     
@@ -605,38 +612,29 @@
                                             Где получить файл?
                                         </p>
 
-                                        <ul class="options">
-                                            <li class="option active_option">
+                                        <div class="options">
+                                            <div class="active_option" >
                                                 <div class="div_wrapp_cont">
-                                                    <div class="cont_option">
+                                                    <div class="cont_option cont_option_act" data-socials="WhatsApp">
                                                         <img src="./img/Group 18.svg" alt="img" class="option_img">
                                                         <p class="option_desc">Whats’s app</p>
                                                     </div>
                                                     <a href="#" class="dropp_down"></a>
                                                 </div>
-                                            </li>
-                                            <li class="option">
-                                                <div class="div_wrapp_cont">
+                                            </div>
+
+                                            <div class="options_list">
+                                                <div class="div_wrapp_cont_menu" data-socials="Telegram">
                                                     <div class="cont_option">
-                                                        <img src="./img/Group 18.svg" alt="img" class="option_img">
-                                                        <p class="option_desc">Whats’s app</p>
+                                                        <img src="./img/Group 72.svg" alt="img" class="option_img">
+                                                        <p class="option_desc">Telegram</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        </ul>
+                                            </div>
+
+                                        </div>
                                     </div>
 
-                                    <!-- <ul class="custom_select">
-                                        <li data-value="1">
-                                            
-                                        </li>
-                                        <li data-value="2">
-
-                                        </li>
-                                        <li data-value="3">
-                                            
-                                        </li>
-                                    </ul> -->
                                 </div>
                                     
                                 <div class="input_block">
@@ -958,11 +956,11 @@
                            <div class="wrapper_arrow_">
                             <p class="happ_photo_text">что происходит на фото</p>
                             <div class="wrapp_items_slides">
-                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  happ_photo_act">
-                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  happ_photo_act">
-                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  happ_photo_act">
-                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  happ_photo_act">
-                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  happ_photo_act">
+                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  active_slide">
+                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  ">
+                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  ">
+                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  ">
+                                <img src="./img/slides2.png" alt="img" class="adapt_stub_image  ">
                             </div>
                             <div class="block_arrow_img_fac">
                                 <a href="#" class="arrow_grey_slide_left"></a>
@@ -976,29 +974,29 @@
                             <p class="tit_factory_img">
                                 Lorem ipsum dolor sit amet, consectetur
                             </p>
-                            <div id="div_text_factory" class="div_text">
+                            <div class="div_text div_text_factory">
                                 <p class="text_stock">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                 </p>
                                 <p class="text_stock">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con</p>
                                 <p class="text_stock">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu</p>
                             </div>
-                            <a href="#" class="link_expand ex_ona_factory">Развернуть</a>
+                            <a data-link_block=".div_text_factory" href="#" class="link_expand ex_ona_factory">Развернуть</a>
                         </div>
     
                         <div id="slide-5" class="block_factory_video card_material_animate">
     
                             <div class="link_play_wrapper">
                                 <div class="wrapp_items_slides">
-                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image happ_photo_act">
-                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image happ_photo_act">
-                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image happ_photo_act">
-                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image happ_photo_act">
-                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image happ_photo_act">
-                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image happ_photo_act">
-                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image happ_photo_act">
-                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image happ_photo_act">
-                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image happ_photo_act">
+                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image active_slide">
+                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image ">
+                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image ">
+                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image ">
+                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image ">
+                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image ">
+                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image ">
+                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image ">
+                                    <img src="./img/video51.png" alt="img" class="adapt_stub_image ">
                                 </div>
                                 
                                 <a href="#" class="link_play_factory"></a>
@@ -1010,14 +1008,14 @@
                                     
                                 </div>
                             </div>
-                            <div id="div_text_factory_"  class="div_text margin-top_class">
+                            <div id=""  class="div_text margin-top_class div_text_factory_">
                                 <p class="text_stock">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                 </p>
                                 <p class="text_stock">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con</p>
                                 <p class="text_stock">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu</p>
                             </div>
-                            <a href="#" class="link_expand ex_two_factory">Развернуть</a>
+                            <a data-link_block=".div_text_factory_" href="#" class="link_expand ex_two_factory">Развернуть</a>
                         </div>
                     </div>
                    
@@ -1065,14 +1063,14 @@
                 </h3>
                      <div class="anim_swap block_swap_dowm">
                         <div class="block_project_card ">
-                            <div id="auto_slide-2" class="project_card">
+                            <div  id="auto_slide-2" class="project_card auto_start">
                                <div class="width_items">
                                 <div class="wrapp_items_slides">
-                                    <img src="./img/R54.png" alt="img" class="img_card_proj auto_none auto_act">
-                                    <img src="./img/R54.png" alt="img" class="img_card_proj auto_none">
-                                    <img src="./img/R54.png" alt="img" class="img_card_proj auto_none">
-                                    <img src="./img/R54.png" alt="img" class="img_card_proj auto_none">
-                                    <img src="./img/R54.png" alt="img" class="img_card_proj auto_none">
+                                    <img src="./img/R54.png" alt="img" class="img_card_proj  active_slide">
+                                    <img src="./img/R54.png" alt="img" class="img_card_proj ">
+                                    <img src="./img/R54.png" alt="img" class="img_card_proj ">
+                                    <img src="./img/R54.png" alt="img" class="img_card_proj ">
+                                    <img src="./img/R54.png" alt="img" class="img_card_proj ">
                                 </div>
                                 <div class="slide_bar">
                                     <div class="progress_bar"></div>
@@ -1108,15 +1106,15 @@
                                 </div>
                             </div>
         
-                            <div id="auto_slide-3" class="project_card">
+                            <div id="auto_slide-3" class="project_card auto_start">
                                 <div class="width_items">
                                     <div class="wrapp_items_slides">
-                                        <img src="./img/r53.png" alt="img" class="img_card_proj auto_none auto_act">
-                                        <img src="./img/r53.png" alt="img" class="img_card_proj auto_none ">
-                                        <img src="./img/r53.png" alt="img" class="img_card_proj auto_none ">
-                                        <img src="./img/r53.png" alt="img" class="img_card_proj auto_none ">
-                                        <img src="./img/r53.png" alt="img" class="img_card_proj auto_none ">
-                                        <img src="./img/r53.png" alt="img" class="img_card_proj auto_none ">
+                                        <img src="./img/r53.png" alt="img" class="img_card_proj  active_slide">
+                                        <img src="./img/r53.png" alt="img" class="img_card_proj  ">
+                                        <img src="./img/r53.png" alt="img" class="img_card_proj  ">
+                                        <img src="./img/r53.png" alt="img" class="img_card_proj  ">
+                                        <img src="./img/r53.png" alt="img" class="img_card_proj  ">
+                                        <img src="./img/r53.png" alt="img" class="img_card_proj  ">
                                     </div>
                                 <div class="slide_bar">
                                     <div class="progress_bar"></div>
@@ -1154,19 +1152,19 @@
                             
                         </div>
                         <div class="div_big_card_block">
-                            <div id="auto_slide-4" class="wrapper_img_block">
+                            <div id="auto_slide-4" class="wrapper_img_block auto_start">
                                 <div class="wrapp_items_slides width_items_big">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none auto_act">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
-                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img auto_none ">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img active_slide">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
+                                    <img src="./img/Rectangle 55.png" alt="img" class="card_big_img">
                                 </div>
                                 <div class="slide_bar">
                                     <div class="progress_bar"></div>

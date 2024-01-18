@@ -20,8 +20,9 @@ body {
 
 .wrapp_items_slides{
     overflow: hidden;
-    max-height: 500px;
+    max-height: 1000px;
     display: flex;
+    position: relative;
 }
 
 
@@ -103,7 +104,9 @@ body {
     background-size: cover;
 }
 
-
+.grey_hide{
+    color: #5c5757 !important;
+}
 
 .block_trumbnails{
     position: absolute;
@@ -513,6 +516,12 @@ body {
     flex-direction: column;
     gap: 7px 10px;
     margin-bottom: 20px;
+    overflow: hidden;
+    height: 200px;
+}
+
+.link_expand_rall{
+    display: none;
 }
 
 .wrappert_list_pvl {
@@ -888,7 +897,7 @@ body {
 }
 
 .block_video_left {
-    margin-top: 70px;
+    margin-top: 75px;
 }
 
 .wrapper_arrow_video {
@@ -1404,8 +1413,17 @@ body {
     transition: opacity 0.7s;
 }
 
+.card_big_img{
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
 .active_slide{
-    opacity: 1;
+    opacity: 1 !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 0.7s;
 }
 /* ======================================================== */
 
@@ -2123,10 +2141,8 @@ line-height: normal;
 /* back */
 background: #2E9375;
 padding: 10px 40px;
-justify-content: center;
-align-items: center;
-gap: 10px;
 top: 40px;
+z-index: 15;
 }
 
 
@@ -2329,6 +2345,10 @@ top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.option_img{
+    width: 35px;
+    height: 35px;
 }
 
 .div_big_card_block {
@@ -2877,14 +2897,14 @@ top: 40px;
     list-style: none;
     margin-top: 10px;
     margin-bottom: 30px;
+    position: relative;
 }
 
-.option {
-    display: none;
-}
+
 
 .active_option {
     display: block;
+    position: relative;
 }
 
 .dropp_down {
@@ -2900,12 +2920,32 @@ top: 40px;
     gap: 0px 10px;
 }
 
+.options_list{
+ opacity: 0;
+ visibility: hidden;
+position: absolute;
+top: 0px;
+left: 0;
+width: 100%;
+}
+
 .div_wrapp_cont {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid #dcdcdc;
     padding: 8px;
+    cursor: pointer;
+}
+
+.div_wrapp_cont_menu{
+    background: rgb(245, 242, 242);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.div_wrapp_cont_menu:hover{
+    background: rgb(224, 220, 220);
 }
 
 .img_get_cont {
@@ -2922,20 +2962,6 @@ top: 40px;
 
 .wrapp_btn_get_catalog {
     margin-top: 20px;
-}
-
-.adapt_stub_image.happ_photo_act{
-    opacity: 1;
-    transition: opacity 0.7s;
-}
-
-.auto_none.auto_act{
-    opacity: 1;
-    transition: opacity 0.7s;
-}
-
-.auto_none{
-    opacity: 0;
 }
 
 .adapt_stub_image {
@@ -3706,6 +3732,10 @@ top: 40px;
         padding-bottom: 0;
     }
 
+    .link_expand_rall{
+        display: flex;
+    }
+
     .number_bann_sub {
         font-size: 32px;
     }
@@ -3746,7 +3776,7 @@ top: 40px;
     }
 
     .characteristics_block {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
     .btn_buy {
@@ -4052,12 +4082,19 @@ line-height: normal;
         font-size: 18px;
     }
 
-    #div_text_factory_ {
+    .div_text_factory_ {
         overflow: hidden;
         height: 106px;
         margin-bottom: 20px;
-        height: 106px;
     }
+
+    .div_text_factory{
+        overflow: hidden;
+        height: 106px;
+        margin-bottom: 20px;
+    }
+
+
 
     .tit_factory_img {
         font-size: 20px;

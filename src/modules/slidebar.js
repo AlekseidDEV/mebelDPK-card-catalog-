@@ -17,6 +17,7 @@ export const slideBar = (arr) => {
         strips.forEach((elem, index) => {
             if(index === 0){
                 elem.classList.add('active_bar')
+                elem.classList.add('progress_bar')
             } else{
                 elem.classList.add('progress_bar')
             }

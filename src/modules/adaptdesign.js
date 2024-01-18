@@ -6,8 +6,6 @@ export class adaptivDesign {
         this.tizerBlock = document.querySelector(".tizer_sub_char_block");
         this.linkExpan = document.querySelector(".link_expand");
         this.btnSign = document.querySelector(".btn_sign");
-        this.textRallBlock = document.querySelector(".card_rall_text_block");
-        this.linkExpanClone = document.querySelector(".link_expand").cloneNode(true);
         this.clonePriceBlock = document.querySelector(".price_buy_block").cloneNode(true);
         this.wrappTextBanners = document.querySelector(".wrapp_sub_text_banners");
         this.leftBlockPrice = document.querySelector(".left_cont_price");
@@ -22,7 +20,6 @@ export class adaptivDesign {
             this.rightBlock.append(this.tizerBlock);
             this.rightBlock.prepend(this.clonePriceBlock);
             this.clonePriceBlock.insertAdjacentElement("afterend", this.btnSign);
-            this.textRallBlock.insertAdjacentElement("beforeend", this.linkExpanClone);
         } else if (window.innerWidth >= "540") {
             this.rightBlock.prepend(this.gabariteItem);
             this.linkExpan.insertAdjacentElement("afterend", this.tizerBlock);
@@ -33,9 +30,7 @@ export class adaptivDesign {
     removeNodes() {
         if (window.innerWidth >= "540" && this.rightBlock.contains(this.clonePriceBlock)) {
             this.rightBlock.removeChild(this.clonePriceBlock);
-        } else if (window.innerWidth >= "540" && this.textRallBlock.contains(this.linkExpanClone)) {
-            this.textRallBlock.removeChild(this.linkExpanClone);
-        }
+        } 
     }
 
     changeText() {
