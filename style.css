@@ -36,6 +36,8 @@ body {
         --moveable-color: #ffffff00 !important;
     }
 
+
+
 .bitrix_cont_zero {
     margin-top: 40px;
     overflow: hidden;
@@ -380,6 +382,9 @@ body {
 .left_cont_card {
     max-width: 745px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .slide_bar{
@@ -517,7 +522,7 @@ body {
     gap: 7px 10px;
     margin-bottom: 20px;
     overflow: hidden;
-    height: 200px;
+    height: 269px;
 }
 
 .link_expand_rall{
@@ -894,10 +899,6 @@ body {
     background: #b3b3b3;
     border-radius: 50px;
     margin-right: 10px;
-}
-
-.block_video_left {
-    margin-top: 75px;
 }
 
 .wrapper_arrow_video {
@@ -3804,7 +3805,7 @@ width: 100%;
     }
     .wrapper_text_rall {
         overflow: hidden;
-        max-height: 200px;
+        height: 200px;
         justify-content: start;
         text-align: left;
     }

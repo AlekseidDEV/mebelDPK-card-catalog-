@@ -8,9 +8,6 @@ export const expandLink = () => {
 
     const expandBlock = (link, dataUrl) => {
         const parentElem = document.querySelector(dataUrl)
-        const initialHeight = parentElem.clientHeight
-
-        console.dir(parentElem.clientHeight);
 
         clicker = !clicker
         
@@ -18,19 +15,26 @@ export const expandLink = () => {
             link.textContent = 'Скрыть'
             link.classList.add('grey_hide')
             animate({
-                duration: 200, 
+                duration: 500, 
                 timing(timeFraction){
                   return timeFraction
                 },
                 draw(progress){
-                    // console.log(parentElem.clientHeight + progress * (parentElem.scrollHeight - parentElem.clientHeight));
-                    console.log(parentElem.clientHeight + progress * (parentElem.scrollHeight - parentElem.clientHeight));
+                    parentElem.style.height = `${parentElem.clientHeight + progress * (parentElem.scrollHeight - parentElem.clientHeight)}px`
                 } 
               })
         } else{
             link.textContent = 'Развернуть'
             link.classList.remove('grey_hide')
-            // funcAnimated()
+            animate({
+                duration: 200, 
+                timing(timeFraction){
+                  return timeFraction
+                },
+                draw(progress){
+                    parentElem.style.height = `${parentElem.scrollHeight - progress * (parentElem.scrollHeight / 2.2)}px`
+                } 
+              })
         }
     }
 
@@ -39,8 +43,4 @@ export const expandLink = () => {
             expandBlock(e.target, e.target.dataset.link_block)
         })
     })
-
-
-
-    // scrollHeight
 }
