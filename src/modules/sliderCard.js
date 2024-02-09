@@ -48,10 +48,8 @@ export const sliderCard = () => {
 
         slides.forEach((slide, index) => {
             if(slide === target){
-                curentSlide.classList.remove('active')
-                curentSlide.classList.add('not_active')
-                target.classList.remove('not_active')
-                target.classList.add('active')
+                curentSlide.classList.remove('activeItem')
+                target.classList.add('activeItem')
                
 
                 changeBar(count || index)
@@ -64,7 +62,7 @@ export const sliderCard = () => {
         counter--
 
         const strips = slideBar.querySelectorAll('div')
-        const activeItem = document.querySelector('.active')
+        const activeItem = document.querySelector('.activeItem')
 
         if(counter < 0){
             counter = strips.length - 1
@@ -75,7 +73,7 @@ export const sliderCard = () => {
 
     const nextSlide = () => {
         const strips = slideBar.querySelectorAll('div')
-        const activeItem = document.querySelector('.active')
+        const activeItem = document.querySelector('.activeItem')
         
         counter++
         
@@ -101,7 +99,7 @@ export const sliderCard = () => {
 
     document.querySelector('.slider_block').addEventListener('click', (e) => {
         if(e.target.closest('.slide_item')){
-            changeTrambnails(e.target, document.querySelector('.active'))
+            changeTrambnails(e.target, document.querySelector('.activeItem'))
         } else if(e.target.matches('.arrow_grey_slide_left, .arrow_grey_slide_right')){
             swithSlides(e)
         }

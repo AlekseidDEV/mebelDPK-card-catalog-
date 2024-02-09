@@ -1,0 +1,13 @@
+$( document ).ready(function(){
+
+})
+
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+
+$this->setFrameMode(true);
+
+use \Bitrix\Main\Localization\Loc;
+
+$this->addExternalCss('/bitrix/templates/aspro_max/components/bitrix/catalog.element/main/custom.css');
+$this->addExternalJS("/bitrix/templates/aspro_max/components/bitrix/catalog.element/main/custom.js");
+?>

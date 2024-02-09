@@ -1,3 +1,4 @@
+import { zoomFunc } from "./zoomedImg"
 export const gallOpened = () => {
     const windowBlock = document.querySelector('.gallery_window')
     const centerImg = document.querySelector('.items_slide')
@@ -34,6 +35,8 @@ export const gallOpened = () => {
         activeSlide.classList.remove(classElem)
         activeSlide.classList.remove('zoomebled')
         array[count].classList.add(classElem)
+
+        zoomFunc(array[count])
     }
 
     const nextSlide = (array, classElem) => {
@@ -51,7 +54,11 @@ export const gallOpened = () => {
 
         activeSlide.classList.remove(classElem)
         activeSlide.classList.remove('zoomebled')
+        activeSlide.style.top = '0'
+        activeSlide.style.left = '0'
         array[count].classList.add(classElem)
+
+        zoomFunc( array[count])
     }
 
     const funcTranmbNails = (target, array, active, delClass) => {
@@ -70,8 +77,9 @@ export const gallOpened = () => {
 
                 activeSlide.classList.remove('act_trumb_img')
                 activeSlide.classList.remove('zoomebled')
+                activeSlide.style.top = '0'
+                activeSlide.style.left = '0'
                 array[index].classList.add('act_trumb_img')
-
                 countText.textContent = `${index + 1}/5`
             }
         })

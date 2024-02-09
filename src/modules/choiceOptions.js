@@ -5,9 +5,7 @@ export const optionsChoice = () => {
         const activeOptions = document.querySelector('.cont_option_act')
         const cloneActiveElem = activeOptions.cloneNode(true)
         const dataValue = item.dataset.socials
-
-        console.log(activeOptions.dataset.socials);
-
+        
         const textClickedPan = item.querySelector('p')
         const imgClickedPan = item.querySelector('img')
 

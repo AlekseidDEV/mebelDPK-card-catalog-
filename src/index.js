@@ -1,6 +1,5 @@
 import { adaptivDesign } from './modules/adaptdesign'
 import { animateBlocks } from './modules/animateBlocks'
-import { autoSlide } from './modules/autoslide'
 import { gallOpened } from './modules/gallOpened'
 import { slideBar } from './modules/slidebar'
 import { sliderCard } from './modules/sliderCard'
@@ -9,6 +8,13 @@ import { zoomFunc } from './modules/zoomedImg'
 import { selectMenu } from './modules/selectListOpen'
 import { optionsChoice } from './modules/choiceOptions'
 import { expandLink } from './modules/expandlink'
+import { swiper } from './modules/swiper'
+import { mouseSlider } from './modules/mouseslider'
+import { workerSlider } from './modules/workerslider'
+import { projectSwip } from './modules/projectswipe'
+import { answerQuestions } from './modules/tabs'
+import { mobileTabs } from './modules/mobiletabs'
+
 
 const adaptive = new adaptivDesign
 
@@ -17,6 +23,7 @@ const allBigTitle = document.querySelectorAll('.green_title')
 const allBlocks = document.querySelectorAll('.card_material_animate')
 const swapBlock = document.querySelectorAll('.block_swap_dowm')
 
+const mouseSliders = document.querySelectorAll('.mouseSlider')
 
 const arrSlidersId = [
     "slider-1",
@@ -25,13 +32,13 @@ const arrSlidersId = [
     "slider-4",
     "slide-5",
     "slider-7",
-    "auto_slide-2",
-    "auto_slide-3",
-    "auto_slide-4",
+    'touch-1',
+    'touch-2',
+    'touch-3'
 ]
 
 window.addEventListener('load', () => {
-    if(window.innerWidth >= '850'){
+    if(window.innerWidth >= 850){
         animateBlocks(
             '.wrapper_block_material', 
             '.green_title', '.grey_title', 
@@ -77,9 +84,32 @@ gallOpened()
 zoomFunc()
 slideBar(arrSlidersId)
 sliders(arrSlidersId)
-autoSlide(4000)
 selectMenu()
 optionsChoice()
 expandLink()
+
+if(window.innerWidth <= 414){
+    swiper([".card_block_turn", ".card_block_choose", ".card_block_ralling", ".wrapper_block_material"])
+}
+
+if(window.innerWidth >= 800){
+    mouseSliders.forEach((slider) => {
+        mouseSlider(slider)
+    })
+}
+
+workerSlider()
+
+if(window.innerWidth <= 800){
+    projectSwip()
+}
+
+if(window.innerWidth <= 575){
+   mobileTabs()
+} else{
+    answerQuestions()
+}
+
+
 
 

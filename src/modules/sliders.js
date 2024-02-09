@@ -62,9 +62,9 @@ export const sliders = (array) => {
 
         const sliderState = slidersState[id];
 
-        if (arrow === "arrow_green_slide_right" || arrow  === "arrow_grey_slide_right") {
+        if (arrow === "arrow_green_slide_right" || arrow  === "arrow_grey_slide_right" || arrow  === "arrow_green_card_right") {
             nextSlide(sliderState, ".active_slide");
-        } else if (arrow === "arrow_grey_slide_left" || arrow  === "arrow_green_slide_left") {
+        } else if (arrow === "arrow_grey_slide_left" || arrow  === "arrow_green_slide_left" || arrow  === "arrow_green_card_left") {
             prevSlide(sliderState, '.active_slide');
         }
     }

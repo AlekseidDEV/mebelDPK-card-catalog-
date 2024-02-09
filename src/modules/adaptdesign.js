@@ -66,11 +66,33 @@ export class adaptivDesign {
         }
     }
 
+    tabsContentChange(){
+        const linkBlockWrappers = document.querySelectorAll('.wrapper_links_answ')
+        const allContentTab = document.querySelectorAll('.tab_info_cont')
+
+        const tabContBlock = document.querySelector(".container_answer")
+        
+            if(window.innerWidth <= 575){
+                for(let i = 0; i <= allContentTab.length - 1; i++){
+                    linkBlockWrappers[i].append(allContentTab[i])
+                }
+            } else{
+                for(let i = 0; i <= allContentTab.length - 1; i++){
+                    if(!tabContBlock.contains(allContentTab[i])){
+                        linkBlockWrappers[i].removeChild(allContentTab[i])
+                        tabContBlock.appendChild(allContentTab[i])
+                    }
+                }
+            }
+
+    }
+
     adaptiveFunc = () => {
         this.adaptCard()
         this.removeNodes();
         this.changeText();
         this.changePriceCalc();
+        this.tabsContentChange()
     }
 
     hendlerAdaptFunc(func, ms) {
@@ -83,8 +105,6 @@ export class adaptivDesign {
     }
 
     init() {
-        
-
         window.addEventListener("load", this.adaptiveFunc);
         window.addEventListener("resize",this.hendlerAdaptFunc(this.adaptiveFunc, 250));
     }

@@ -59,7 +59,7 @@ export const animateBlocks = (
 
     const swimCard = (classbBlock, classElem, time = 400) => {
         const cards = classbBlock.querySelectorAll(classElem);
-
+        
         cards.forEach((card, index) => {
             const delay = time * index;
 
@@ -73,43 +73,43 @@ export const animateBlocks = (
         entries.forEach((entry) => {
             if (entry.isIntersecting || isElementVisible(entry.target)){
                 switch (true) {
-                    case entry.target.className === classMattCard.slice('1'):
+                    case entry.target.matches('.wrapper_block_material.swiper-wrapper'):
                         swimCard(entry.target, ".card_material");
                         observer.unobserve(entry.target);
                         break
 
-                    case entry.target.className === rallBlock.slice('1'):
+                    case entry.target.matches('.card_block_ralling.swiper-wrapper'):
                         swimCard(entry.target, ".card_ralling_options");
                         observer.unobserve(entry.target);
                         break
 
-                    case entry.target.className === blockTurn.slice('1'):
+                    case entry.target.matches('.card_block_turn.swiper-wrapper'):
                         swimCard(entry.target, ".card_turn");
                         observer.unobserve(entry.target);
                         break
 
                     case entry.target.classList.contains(choose.slice(1)):
-                        swimCard(entry.target, "div", 50);
+                        swimCard(entry.target, ".chose_obs", 50);
                         observer.unobserve(entry.target);
                         break
 
                     case entry.target.classList.contains(priceCalc.slice(1)):
-                        swimCard(entry.target, "div", 40);
+                        swimCard(entry.target, ".obs_calc", 40);
                         observer.unobserve(entry.target);
                         break
 
                     case entry.target.classList.contains(factory.slice(1)):
-                        swimCard(entry.target, "div", 40);
+                        swimCard(entry.target, ".obs_factory", 40);
                         observer.unobserve(entry.target);
                         break
 
                     case entry.target.classList.contains(sertificate.slice(1)):
-                        swimCard(entry.target, "div", 250);
+                        swimCard(entry.target, ".obs_sert", 250);
                         observer.unobserve(entry.target);
                         break
 
                     case entry.target.classList.contains(think.slice(1)):
-                        swimCard(entry.target, "div", 40);
+                        swimCard(entry.target, ".obs_think", 40);
                         observer.unobserve(entry.target);
                         break
 
@@ -118,7 +118,7 @@ export const animateBlocks = (
                         observer.unobserve(entry.target);
                         break
 
-                    case entry.target.classList.contains(cardWork.slice(1)):
+                    case entry.target.id === 'worker-slider':
                         swimCard(entry.target, ".worker_card", 40);
                         observer.unobserve(entry.target);
                         break
