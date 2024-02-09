@@ -155,8 +155,10 @@ export const animateBlocks = (
         threshold: 0.3,
     });
 
-    const cardObserver = new IntersectionObserver(heandeElements,
-        {rootMargin: "280px", threshold: 0.3}
+    const cardObserver = new IntersectionObserver(heandeElements, {
+        rootMargin: "280px", 
+        threshold: 0.3,
+    }
     );
 
     titleGreen.forEach((elem) => {

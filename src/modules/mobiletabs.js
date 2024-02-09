@@ -6,8 +6,12 @@ export const mobileTabs = () => {
     const activeLink = document.querySelector('._active_link')
     const activeTab = document.querySelector('.active_tb')
 
-    activeLink.classList.remove('_active_link')
-    activeTab.classList.remove('active_tb')
+    if(activeLink || activeTab){
+            activeLink.classList.remove('_active_link')
+            activeTab.classList.remove('active_tb')
+    } else{
+        return
+    }
 
     const changeTabs = (e) => {
         if(e.target.closest('.wrapper_links_answ')){

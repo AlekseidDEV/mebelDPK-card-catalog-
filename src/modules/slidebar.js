@@ -23,7 +23,7 @@ export const slideBar = (arr) => {
     }
 
     arr.forEach((id) => {
-        const parentElem = document.getElementById(id)
+        const parentElem = document.querySelector(`#${id}`)
 
         addStrip(parentElem)
     })

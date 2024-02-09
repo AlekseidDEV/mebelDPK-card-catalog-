@@ -3,9 +3,6 @@ import Swiper from "swiper"
 import 'swiper/css';
 
 export const swiper = (array) => {
-
-    const swipers = document.querySelectorAll('.swiper')
-    
     const swiperTurn = new Swiper('.container_swiper_turn', {
         slidesPerView: "auto",
         spaceBetween: 20,
@@ -47,35 +44,15 @@ export const swiper = (array) => {
         allDots[index].classList.add(classElem.slice(1))
     }
 
-    const addDots = (slides, dots) => {
-        for (let i = 0; i <= slides.length - 1; i++) {
-            const newDot = document.createElement('span')
-            dots.append(newDot)
-        }
 
-        const dotsItem = dots.querySelectorAll('span')
-
-        dotsItem.forEach((elem, index) => {
-            if (index === 0) {
-                elem.classList.add('dot', "dotActive")
-            } else {
-                elem.classList.add('dot')
-            }
-
-        })
-    }
-
-    swipers.forEach((swip) => {
-        const allSlides = swip.querySelectorAll('.swiper-slide')
-        const dotBlock = swip.querySelector('.dots_wrapper')
-
-        addDots(allSlides, dotBlock)
-    })
 
     const delClass = () => {
         array.forEach((itemClass) => {
             const element = document.querySelector(itemClass)
-            element.classList.remove(itemClass.slice(1))
+
+            if(element){
+                 element.classList.remove(itemClass.slice(1))
+            } 
         })
     }
 
