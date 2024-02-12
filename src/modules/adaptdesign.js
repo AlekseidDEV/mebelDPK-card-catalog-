@@ -1,9 +1,3 @@
-import { mobileTabs } from "./mobiletabs";
-import { answerQuestions } from "./tabs";
-import { projectSwip } from "./projectswipe";
-import { mouseSlider } from "./mouseslider";
-import { animateBlocks } from "./animateBlocks";
-
 export class adaptivDesign {
     constructor() {
         this.gabariteItem = document.querySelector(".blockgabarit");
@@ -18,7 +12,6 @@ export class adaptivDesign {
         this.adaptStublock = document.querySelector(".adapt_block_stub");
         this.stubImg = document.querySelector(".stub_img_2");
         this.rightContPice = document.querySelector(".right_cont_price");
-        this.mouseSliders = document.querySelectorAll('.mouseSlider')
         this.allsmalTitle = document.querySelectorAll('.grey_title')
         this.allBigTitle = document.querySelectorAll('.green_title')
         this.allBlocks = document.querySelectorAll('.card_material_animate')
@@ -109,63 +102,6 @@ export class adaptivDesign {
         this.changeText();
         this.changePriceCalc();
         this.tabsContentChange()
-
-
-
-        if(window.innerWidth <= 575){
-            mobileTabs()
-        } else{
-            answerQuestions()
-        }
-
-        if(window.innerWidth <= 800){
-            projectSwip()
-        }
-
-        if(window.innerWidth > 800){
-            this.mouseSliders.forEach((slider) => {
-                mouseSlider(slider)
-            })
-        }
-
-        if(window.innerWidth >= 850){
-            animateBlocks(
-                '.wrapper_block_material', 
-                '.green_title', '.grey_title', 
-                '.card_block_ralling', 
-                '.card_block_turn', 
-                '.card_rall_text_block', 
-                '.get_catalog_block ', 
-                '.block_choose_us', 
-                '.card_block_disc', 
-                '.price_calc_block', 
-                '.block_cont_factory', 
-                '.wrapper_block_sertif', 
-                '.anim_swap', 
-                '.wrapper_cont_think', 
-                '.block_img_up', 
-                '.block_social_link',
-                '.wrap_text', 
-                '.block_card_work',
-                '.block_tab_cont'
-                )
-        } else {
-            this.allBlocks.forEach((elem) => {
-                elem.classList.remove('card_material_animate')
-            })
-    
-            this.allBigTitle.forEach((elem) => {
-                elem.classList.remove('green_title')
-            })
-    
-            this.allsmalTitle.forEach((elem) => {
-                elem.classList.remove('grey_title')
-            })
-    
-            this.swapBlock.forEach((elem) => {
-                elem.classList.remove('block_swap_dowm')
-            })
-        }
     }
 
     hendlerAdaptFunc(func, ms) {
