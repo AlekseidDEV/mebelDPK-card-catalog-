@@ -18,6 +18,11 @@ import { animateBlocks } from './modules/animateBlocks'
 
 const adaptive = new adaptivDesign
 
+const allsmalTitle = document.querySelectorAll('.grey_title')
+const allBigTitle = document.querySelectorAll('.green_title')
+const allBlocks = document.querySelectorAll('.card_material_animate')
+const swapBlock = document.querySelectorAll('.block_swap_dowm')
+
 const mouseSliders = document.querySelectorAll('.mouseSlider')
 
 let test = false
@@ -58,19 +63,19 @@ if(window.innerWidth >= 850){
         '.block_tab_cont'
         )
 } else {
-    this.allBlocks.forEach((elem) => {
+    allBlocks.forEach((elem) => {
         elem.classList.remove('card_material_animate')
     })
 
-    this.allBigTitle.forEach((elem) => {
+    allBigTitle.forEach((elem) => {
         elem.classList.remove('green_title')
     })
 
-    this.allsmalTitle.forEach((elem) => {
+    allsmalTitle.forEach((elem) => {
         elem.classList.remove('grey_title')
     })
 
-    this.swapBlock.forEach((elem) => {
+    swapBlock.forEach((elem) => {
         elem.classList.remove('block_swap_dowm')
     })
 }

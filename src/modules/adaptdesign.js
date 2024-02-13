@@ -12,10 +12,6 @@ export class adaptivDesign {
         this.adaptStublock = document.querySelector(".adapt_block_stub");
         this.stubImg = document.querySelector(".stub_img_2");
         this.rightContPice = document.querySelector(".right_cont_price");
-        this.allsmalTitle = document.querySelectorAll('.grey_title')
-        this.allBigTitle = document.querySelectorAll('.green_title')
-        this.allBlocks = document.querySelectorAll('.card_material_animate')
-        this.swapBlock = document.querySelectorAll('.block_swap_dowm')
 
         this.delMat = document.querySelector('#delMat')
         this.delTurn = document.querySelector('#turnDel')
