@@ -18,7 +18,7 @@ export const mobileTabs = () => {
             tabLinks.forEach((link, index) => {
                 if(link === e.target){
                     tabContents[index].style.maxHeight = `${tabContents[index].scrollHeight}px`
-                } else{
+                } else if(!e.target.closest('.text_tab_')){
                     tabContents[index].style.maxHeight = '0px'
                 }
             })

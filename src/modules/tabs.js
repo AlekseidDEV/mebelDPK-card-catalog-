@@ -6,6 +6,7 @@ export const answerQuestions = () => {
 
     const changeTabs = (e) => {
         e.preventDefault()
+        
         if(e.target.closest('.wrapper_links_answ') ){
             tabLinks.forEach((link, index) => {
                 if(link === e.target){

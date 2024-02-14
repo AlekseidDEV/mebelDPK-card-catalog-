@@ -3597,11 +3597,18 @@ body {
     }
 }
 
+
 @media (max-width: 850px) {
 
     .block_trumbnails {
         position: static;
         transform: none;
+    }
+
+    .container_swip_chooce,
+    .container_rall_swiper,
+    .container_mat_swiper {
+        margin-top: 30px;
     }
 
     .block_cont_sert{
@@ -4289,12 +4296,6 @@ body {
         margin-top: 30px;
     }
 
-    .container_swip_chooce,
-    .container_rall_swiper,
-    .container_mat_swiper {
-        margin-top: 30px;
-    }
-
     .swiper-wrapper {
         width: 100% !important;
     }
@@ -4504,15 +4505,9 @@ body {
     .wrapp_btn_wha {
         padding: 15px 30px;
     }
-
-
 }
 
 @media (max-width: 393px) {
-    .diff_btn {
-        text-align: center;
-    }
-
     .title_cont_mat{
         font-size: 20px;
     }

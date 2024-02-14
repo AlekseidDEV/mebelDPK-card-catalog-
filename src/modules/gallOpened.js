@@ -5,13 +5,22 @@ export const gallOpened = () => {
     const slidesWind = document.querySelectorAll('.trumb_image')
     const trumbIcons = document.querySelectorAll('.trumb_icon')
     const countText = document.querySelector('.count_trumb')
+    const bxFixedHeader = document.querySelector('#headerfixed')
+    const opener = document.querySelector('.opener')
+    const iconDown = document.querySelector('.scroll-to-top')
 
     
 
     let count = 0
 
     const openModal = () => {
+        
         windowBlock.classList.add('gw_act')
+
+        document.body.style.overflow = 'hidden'
+        bxFixedHeader.style.display = 'none'
+        opener.style.display = 'none'
+        iconDown.style.display = 'none'
     }
 
     const changeIcon = (index, curentSlide) => {
@@ -89,6 +98,10 @@ export const gallOpened = () => {
     windowBlock.addEventListener('click', (e) => {
         if(e.target.className === 'close_wind'){
             windowBlock.classList.remove('gw_act')
+            document.body.style.overflow = ''
+            bxFixedHeader.style.display = 'block'
+            opener.style.display = 'block'
+            iconDown.style.display = 'block'
         } else if(e.target.matches('.left_gall')){
             prevSlide(slidesWind, 'act_trumb_img', )
         } else if (e.target.matches('.right_gall')){

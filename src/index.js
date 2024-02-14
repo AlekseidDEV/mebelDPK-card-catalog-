@@ -25,7 +25,6 @@ const swapBlock = document.querySelectorAll('.block_swap_dowm')
 
 const mouseSliders = document.querySelectorAll('.mouseSlider')
 
-let test = false
 
 const arrSlidersId = [
     "slider-1",
@@ -89,14 +88,14 @@ selectMenu()
 optionsChoice()
 expandLink()
 
-if(window.innerWidth <= 414){
+if(window.innerWidth <= 750){
     swiper([".card_block_turn", ".card_block_choose", ".card_block_ralling", ".wrapper_block_material"])
 }
 
 window.addEventListener('resize', () => {
-    if(window.innerWidth <= 414){
+    if(window.innerWidth <= 750){
         swiper([".card_block_turn", ".card_block_choose", ".card_block_ralling", ".wrapper_block_material"])
-    } else if(window.innerWidth > 414 && window.innerWidth < 1100){
+    } else if(window.innerWidth > 750 && window.innerWidth < 1100){
         location.reload()
     }
 })
