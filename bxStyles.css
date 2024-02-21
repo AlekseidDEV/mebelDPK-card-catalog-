@@ -1,3 +1,93 @@
+@media (hover: hover) {
+    .arrow_green_card_left:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
+    }
+
+    .arrow_green_card_right:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/bc3/wo7edjktd6aonya77ks6b3xct3tx9irv.svg);
+    }
+
+    .close_wind:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/5c9/msk3vgktgfeilihcu0zu0zpi0gmjz6jh.svg)
+            no-repeat center !important;
+    }
+
+    .left_gall:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/8d8/0jgz49cyzc3488xc2ucnx5yt1sb2n26h.svg);
+    }
+    .right_gall:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/a35/p4ro1diiqjvhyr42jlknrwauc53dqchu.svg);
+    }
+
+    .arrow_grey_slide_left:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
+    }
+    
+    .arrow_grey_slide_right:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/bc3/wo7edjktd6aonya77ks6b3xct3tx9irv.svg);
+    }
+
+    .arrow_green_slide_left:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
+    }
+    .arrow_green_slide_right:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/bc3/wo7edjktd6aonya77ks6b3xct3tx9irv.svg);
+    }
+
+    .link_slide_our:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/8d8/0jgz49cyzc3488xc2ucnx5yt1sb2n26h.svg);
+    }
+    
+    .link_slide_our_right:hover {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/a35/p4ro1diiqjvhyr42jlknrwauc53dqchu.svg);
+    }
+}
+
+@media (hover: none) {
+    .arrow_green_card_left:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
+    }
+
+    .arrow_green_card_right:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/bc3/wo7edjktd6aonya77ks6b3xct3tx9irv.svg);
+    }
+
+    .close_wind:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/5c9/msk3vgktgfeilihcu0zu0zpi0gmjz6jh.svg)
+            no-repeat center !important;
+    }
+
+    .left_gall:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/8d8/0jgz49cyzc3488xc2ucnx5yt1sb2n26h.svg);
+    }
+    .right_gall:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/a35/p4ro1diiqjvhyr42jlknrwauc53dqchu.svg);
+    }
+
+    .arrow_grey_slide_left:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
+    }
+    
+    .arrow_grey_slide_right:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/bc3/wo7edjktd6aonya77ks6b3xct3tx9irv.svg);
+    }
+
+    .arrow_green_slide_left:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
+    }
+    .arrow_green_slide_right:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/bc3/wo7edjktd6aonya77ks6b3xct3tx9irv.svg);
+    }
+
+    .link_slide_our:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/8d8/0jgz49cyzc3488xc2ucnx5yt1sb2n26h.svg);
+    }
+    
+    .link_slide_our_right:active {
+        background: url(https://dev.mebeldpk.ru/upload/medialibrary/a35/p4ro1diiqjvhyr42jlknrwauc53dqchu.svg);
+    }
+}
+
 .arrow_green_card_left,
 .arrow_green_card_right {
     width: 25px;
@@ -10,17 +100,13 @@
     right: 60px;
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/54b/az1ziwfbh09zmtnf3j1f4eo8qbv5novv.svg);
 }
-.arrow_green_card_left:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
-}
+
 .arrow_green_card_right {
     right: 0;
     z-index: 2;
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/596/n095lafq4t88zfipoyfeng2fg6cuj29i.svg);
 }
-.arrow_green_card_right:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/bc3/wo7edjktd6aonya77ks6b3xct3tx9irv.svg);
-}
+
 .container_osnov {
     max-width: 1500px;
     width: 100%;
@@ -125,10 +211,7 @@ body {
     right: 35px;
     background-size: cover;
 }
-.close_wind:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/5c9/msk3vgktgfeilihcu0zu0zpi0gmjz6jh.svg)
-        no-repeat center !important;
-}
+
 .grey_hide {
     color: #5c5757 !important;
 }
@@ -163,12 +246,7 @@ body {
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/54b/az1ziwfbh09zmtnf3j1f4eo8qbv5novv.svg);
     left: 0;
 }
-.left_gall:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/8d8/0jgz49cyzc3488xc2ucnx5yt1sb2n26h.svg);
-}
-.right_gall:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/a35/p4ro1diiqjvhyr42jlknrwauc53dqchu.svg);
-}
+
 .right_gall {
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/596/n095lafq4t88zfipoyfeng2fg6cuj29i.svg);
     right: 0;
@@ -216,10 +294,7 @@ body {
     transform: translate(0, -50%);
     left: 0;
 }
-.close_wind:hover {
-    background: url(./img/greenClose.svg) no-repeat center;
-    transition: 0.4s;
-}
+
 .cont_wrapper_items {
     width: 100%;
     display: flex;
@@ -388,16 +463,12 @@ body {
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/54b/az1ziwfbh09zmtnf3j1f4eo8qbv5novv.svg);
     left: 15px;
 }
-.arrow_grey_slide_left:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
-}
+
 .arrow_grey_slide_right {
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/596/n095lafq4t88zfipoyfeng2fg6cuj29i.svg);
     right: 15px;
 }
-.arrow_grey_slide_right:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/bc3/wo7edjktd6aonya77ks6b3xct3tx9irv.svg);
-}
+
 .slide_item {
     cursor: pointer;
 }
@@ -1185,17 +1256,13 @@ body {
     left: 15px;
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/54b/az1ziwfbh09zmtnf3j1f4eo8qbv5novv.svg);
 }
-.arrow_green_slide_left:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
-}
+
 .arrow_green_slide_right {
     right: 15px;
     z-index: 2;
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/596/n095lafq4t88zfipoyfeng2fg6cuj29i.svg);
 }
-.arrow_green_slide_right:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/bc3/wo7edjktd6aonya77ks6b3xct3tx9irv.svg);
-}
+
 .pos_char_lest {
     position: absolute;
     top: 160px;
@@ -2172,18 +2239,14 @@ body {
     display: flex;
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/54b/az1ziwfbh09zmtnf3j1f4eo8qbv5novv.svg);
 }
-.link_slide_our:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/8d8/0jgz49cyzc3488xc2ucnx5yt1sb2n26h.svg);
-}
+
 .link_slide_our_right {
     width: 25px;
     height: 40px;
     display: flex;
     background: url(https://dev.mebeldpk.ru/upload/medialibrary/596/n095lafq4t88zfipoyfeng2fg6cuj29i.svg);
 }
-.link_slide_our_right:hover {
-    background: url(https://dev.mebeldpk.ru/upload/medialibrary/a35/p4ro1diiqjvhyr42jlknrwauc53dqchu.svg);
-}
+
 .wrapper_our_slide_arr {
     display: flex;
     align-items: end;
