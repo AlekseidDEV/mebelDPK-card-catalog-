@@ -10,6 +10,7 @@ export const workerSlider = () => {
         slidesPerView: 'auto',
         spaceBetween: 80,
         grabCursor: true,
+        passiveListeners: true,
         slideClass: 'worker_card',
         modules : [Navigation, Pagination],
         pagination: {

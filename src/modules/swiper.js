@@ -6,6 +6,7 @@ export const swiper = (array) => {
     const swiperTurn = new Swiper('.container_swiper_turn', {
         slidesPerView: "auto",
         spaceBetween: 20,
+        passiveListeners: true,
         grabCursor: true,
     });
 
@@ -14,6 +15,7 @@ export const swiper = (array) => {
     const swiperChose = new Swiper('.container_swip_chooce', {
         slidesPerView: "auto",
         spaceBetween: 20,
+        passiveListeners: true,
         grabCursor: true,
     });
 
@@ -22,6 +24,7 @@ export const swiper = (array) => {
     const swiperRall = new Swiper('.container_rall_swiper', {
         slidesPerView: "auto",
         spaceBetween: 20,
+        passiveListeners: true,
         grabCursor: true,
     });
 
@@ -30,6 +33,7 @@ export const swiper = (array) => {
     const swiperMat = new Swiper('.container_mat_swiper', {
         slidesPerView: "auto",
         spaceBetween: 20,
+        passiveListeners: true,
         grabCursor: true,
     });
 
@@ -60,14 +64,14 @@ export const swiper = (array) => {
 
     swiperTurn.on('slideChange', (e) => {
         changeDot(e.activeIndex, swiperTurn.dotBlock, 'span', '.dotActive')
-    }, { passive: true })
+    })
     swiperChose.on('slideChange', (e) => {
         changeDot(e.activeIndex, swiperChose.dotBlock, 'span', '.dotActive')
-    }, { passive: true })
+    })
     swiperRall.on('slideChange', (e) => {
         changeDot(e.activeIndex, swiperRall.dotBlock, 'span', '.dotActive')
-    } , { passive: true })
+    })
     swiperMat.on('slideChange', (e) => {
         changeDot(e.activeIndex, swiperMat.dotBlock, 'span', '.dotActive')
-    }, { passive: true })
+    })
 }

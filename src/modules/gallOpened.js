@@ -5,9 +5,13 @@ export const gallOpened = () => {
     const slidesWind = document.querySelectorAll('.trumb_image')
     const trumbIcons = document.querySelectorAll('.trumb_icon')
     const countText = document.querySelector('.count_trumb')
+
+    const headerWrapper = document.querySelector('#header')
     const bxFixedHeader = document.querySelector('#headerfixed')
     const opener = document.querySelector('.opener')
     const iconDown = document.querySelector('.scroll-to-top')
+    const topWrapper = document.querySelector('.top-block-wrapper')
+    const mobHeader = document.querySelector('#mobileheader')
 
     
 
@@ -21,6 +25,9 @@ export const gallOpened = () => {
         bxFixedHeader.style.display = 'none'
         opener.style.display = 'none'
         iconDown.style.display = 'none'
+        topWrapper.style.display = 'none'
+        headerWrapper.style.display = 'none'
+        mobHeader.style.display = 'none'
     }
 
     const changeIcon = (index, curentSlide) => {
@@ -102,6 +109,9 @@ export const gallOpened = () => {
             bxFixedHeader.style.display = 'block'
             opener.style.display = 'block'
             iconDown.style.display = 'block'
+            topWrapper.style.display = 'block'
+            headerWrapper.style.display = 'block'
+            mobHeader.style.display = 'block'
         } else if(e.target.matches('.left_gall')){
             prevSlide(slidesWind, 'act_trumb_img', )
         } else if (e.target.matches('.right_gall')){
