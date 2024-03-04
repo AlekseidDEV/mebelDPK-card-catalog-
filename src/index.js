@@ -15,6 +15,7 @@ import { projectSwip } from './modules/projectswipe'
 import { mobileTabs } from './modules/mobiletabs'
 import { answerQuestions } from './modules/tabs'
 import { animateBlocks } from './modules/animateBlocks'
+import { maskPhone } from './modules/helpers'
 
 const adaptive = new adaptivDesign
 
@@ -116,6 +117,8 @@ if(window.innerWidth <= 575){
 } else{
     answerQuestions()
 }
+
+maskPhone('input[type="tel"]')
 
 
 
