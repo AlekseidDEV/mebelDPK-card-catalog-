@@ -1,9 +1,6 @@
 import { adaptivDesign } from './modules/adaptdesign'
-import { gallOpened } from './modules/gallOpened'
 import { slideBar } from './modules/slidebar'
-import { sliderCard } from './modules/sliderCard'
 import { sliders } from './modules/sliders'
-import { zoomFunc } from './modules/zoomedImg'
 import { selectMenu } from './modules/selectListOpen'
 import { optionsChoice } from './modules/choiceOptions'
 import { expandLink } from './modules/expandlink'
@@ -23,9 +20,7 @@ const allsmalTitle = document.querySelectorAll('.grey_title')
 const allBigTitle = document.querySelectorAll('.green_title')
 const allBlocks = document.querySelectorAll('.card_material_animate')
 const swapBlock = document.querySelectorAll('.block_swap_dowm')
-
 const mouseSliders = document.querySelectorAll('.mouseSlider')
-
 
 const arrSlidersId = [
     "slider-1",
@@ -33,7 +28,6 @@ const arrSlidersId = [
     "slider-3",
     "slider-4",
     "slide-5",
-    "slider-7",
     'touch-1',
     'touch-2',
     'touch-3'
@@ -80,9 +74,8 @@ if(window.innerWidth >= 850){
     })
 }
 
-sliderCard()
-gallOpened()
-zoomFunc()
+
+
 slideBar(arrSlidersId)
 sliders(arrSlidersId)
 selectMenu()

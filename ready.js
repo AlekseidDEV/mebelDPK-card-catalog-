@@ -1,38 +1,39 @@
-$( document ).ready(function(){
+// $( document ).ready(function(){
 
-})
+// })
 
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+// <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
-$this->setFrameMode(true);
+// $this->setFrameMode(true);
 
-use \Bitrix\Main\Localization\Loc;
+// use \Bitrix\Main\Localization\Loc;
 
-$this->addExternalCss('/bitrix/templates/aspro_max/components/bitrix/catalog.element/main/custom.css');
-$this->addExternalJS("/bitrix/templates/aspro_max/components/bitrix/catalog.element/main/custom.js");
-?>
-
-mobileheader-v4
-
-
-workerImgsSlider .forEach((item) => {
-    const srcItem = item.dataset["src"]
-
-    console.log(srcItem);
-
-    if(item.classList.length > 1){
-        item.classList = ''
-
-    }
-})
+// $this->addExternalCss('/bitrix/templates/aspro_max/components/bitrix/catalog.element/main/custom.css');
+// $this->addExternalJS("/bitrix/templates/aspro_max/components/bitrix/catalog.element/main/custom.js");
+// $this->addExternalJS("/bitrix/templates/aspro_max/components/bitrix/catalog.element/main/zazyignor.js");
+// ?>
 
 
-mouseImgsSlider.forEach((item) => {
-    const srcItem = item.dataset["src"]
+
+
+// workerImgsSlider .forEach((item) => {
+//     const srcItem = item.dataset["src"]
+
+//     console.log(srcItem);
+
+//     if(item.classList.length > 1){
+//         item.classList = ''
+
+//     }
+// })
+
+
+// mouseImgsSlider.forEach((item) => {
+//     const srcItem = item.dataset["src"]
 
     
-    if(item.classList.length > 0){
-        item.classList = ''
-	    item.src = srcItem
-    }
-})
+//     if(item.classList.length > 0){
+//         item.classList = ''
+// 	    item.src = srcItem
+//     }
+// })

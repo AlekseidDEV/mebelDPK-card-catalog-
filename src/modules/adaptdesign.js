@@ -1,12 +1,6 @@
 export class adaptivDesign {
     constructor() {
-        this.gabariteItem = document.querySelector(".blockgabarit");
-        this.leftBlock = document.querySelector(".left_cont_card");
-        this.rightBlock = document.querySelector(".right_cont_cad");
-        this.tizerBlock = document.querySelector(".tizer_sub_char_block");
         this.linkExpan = document.querySelector(".link_expand");
-        this.btnSign = document.querySelector(".btn_sign");
-        this.clonePriceBlock = document.querySelector(".price_buy_block").cloneNode(true);
         this.wrappTextBanners = document.querySelector(".wrapp_sub_text_banners");
         this.leftBlockPrice = document.querySelector(".left_cont_price");
         this.adaptStublock = document.querySelector(".adapt_block_stub");
@@ -17,25 +11,6 @@ export class adaptivDesign {
         this.delTurn = document.querySelector('#turnDel')
         this.delChoose = document.querySelector('#chooDel')
         this.delRall = document.querySelector('#rallDel')
-    }
-
-    adaptCard = () => {
-        if (window.innerWidth <= "540") {
-            this.leftBlock.prepend(this.gabariteItem);
-            this.rightBlock.append(this.tizerBlock);
-            this.rightBlock.prepend(this.clonePriceBlock);
-            this.clonePriceBlock.insertAdjacentElement("afterend", this.btnSign);
-        } else if (window.innerWidth >= "540") {
-            this.rightBlock.prepend(this.gabariteItem);
-            this.linkExpan.insertAdjacentElement("afterend", this.tizerBlock);
-            this.rightBlock.append(this.btnSign);
-        }
-    }
-
-    removeNodes() {
-        if (window.innerWidth >= "540" && this.rightBlock.contains(this.clonePriceBlock)) {
-            this.rightBlock.removeChild(this.clonePriceBlock);
-        } 
     }
 
     changeText() {
@@ -93,8 +68,6 @@ export class adaptivDesign {
     }
 
     adaptiveFunc = () => {
-        this.adaptCard()
-        this.removeNodes();
         this.changeText();
         this.changePriceCalc();
         this.tabsContentChange()
