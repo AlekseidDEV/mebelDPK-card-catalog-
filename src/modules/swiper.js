@@ -3,6 +3,7 @@ import Swiper from "swiper"
 import 'swiper/css';
 
 export const swiper = (array) => {
+
     const swiperTurn = new Swiper('.container_swiper_turn', {
         slidesPerView: "auto",
         spaceBetween: 20,

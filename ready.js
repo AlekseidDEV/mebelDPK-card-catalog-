@@ -37,3 +37,8 @@
 // 	    item.src = srcItem
 //     }
 // })
+
+// 'js' => SITE_TEMPLATE_PATH.'/vendor/js/carousel/swiper/swiper-bundle.min.js',
+
+// путь до подключения библиотек Рабочий стол Контент Структура сайта Файлы и папки bitrix modules aspro.max lib functions Extensions.php
+

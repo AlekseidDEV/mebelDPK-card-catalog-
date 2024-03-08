@@ -76,40 +76,40 @@ if(window.innerWidth >= 850){
 
 
 
-slideBar(arrSlidersId)
-sliders(arrSlidersId)
-selectMenu()
-optionsChoice()
-expandLink()
+// slideBar(arrSlidersId)
+// sliders(arrSlidersId)
+// selectMenu()
+// optionsChoice()
+// expandLink()
 
-if(window.innerWidth <= 750){
-    swiper([".card_block_turn", ".card_block_choose", ".card_block_ralling", ".wrapper_block_material"])
-}
+// if(window.innerWidth <= 750){
+//     swiper([".card_block_turn", ".card_block_choose", ".card_block_ralling", ".wrapper_block_material"])
+// }
 
-window.addEventListener('resize', () => {
-    if(window.innerWidth <= 750){
-        swiper([".card_block_turn", ".card_block_choose", ".card_block_ralling", ".wrapper_block_material"])
-    } else if(window.innerWidth > 750 && window.innerWidth < 1100){
-        location.reload()
-    }
-})
+// window.addEventListener('resize', () => {
+//     if(window.innerWidth <= 750){
+//         swiper([".card_block_turn", ".card_block_choose", ".card_block_ralling", ".wrapper_block_material"])
+//     } else if(window.innerWidth > 750 && window.innerWidth < 1100){
+//         location.reload()
+//     }
+// })
 
-workerSlider()
-generateDot()
+// workerSlider()
+// generateDot()
 
-if(window.innerWidth > 800){
-        mouseSliders.forEach((slider) => {
-            mouseSlider(slider)
-    })
-} else if(window.innerWidth <= 800){
-    projectSwip()
-}
+// if(window.innerWidth > 800){
+//         mouseSliders.forEach((slider) => {
+//             mouseSlider(slider)
+//     })
+// } else if(window.innerWidth <= 800){
+//     projectSwip()
+// }
 
-if(window.innerWidth <= 575){
-    mobileTabs()
-} else{
-    answerQuestions()
-}
+// if(window.innerWidth <= 575){
+//     mobileTabs()
+// } else{
+//     answerQuestions()
+// }
 
 maskPhone('input[type="tel"]')
 
