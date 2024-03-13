@@ -1,4 +1,14 @@
 
+/*! правки по стилям */
+/* .container_swiper_turn,
+.container_swip_chooce,
+.container_rall_swiper,
+.container_mat_swiper {
+    margin-top: 30px;
+} */
+/*! правки по стилям */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -3604,12 +3614,6 @@ body {
         transform: none;
     }
 
-    .container_swip_chooce,
-    .container_rall_swiper,
-    .container_mat_swiper {
-        margin-top: 30px;
-    }
-
     .block_cont_sert{
         width: 100%;
     }
@@ -4289,12 +4293,6 @@ body {
         margin-top: 0;
     }
 
-    .container_swiper_turn {
-        max-width: 100%;
-        width: 100%;
-        margin-top: 30px;
-    }
-
     .swiper-wrapper {
         width: 100% !important;
     }
@@ -4440,8 +4438,6 @@ body {
         font-size: 18px;
     }
 
-
-
     .title_card_top,
     .title_sup_mat,
     .title_ralling_block,
@@ -4471,10 +4467,6 @@ body {
     .tit_sub_worker_que,
     .sub_title_sert {
         font-size: 18px;
-    }
-
-    .dots_wrapper {
-        display: flex;
     }
 
     .ralling_block {

@@ -5,7 +5,6 @@ import { selectMenu } from './modules/selectListOpen'
 import { optionsChoice } from './modules/choiceOptions'
 import { expandLink } from './modules/expandlink'
 import { workerSlider } from './modules/workerslider'
-import { swiper } from './modules/swiper'
 import { generateDot } from './modules/dotswiper'
 import { mouseSlider } from './modules/mouseslider'
 import { projectSwip } from './modules/projectswipe'
@@ -13,6 +12,7 @@ import { mobileTabs } from './modules/mobiletabs'
 import { answerQuestions } from './modules/tabs'
 import { animateBlocks } from './modules/animateBlocks'
 import { maskPhone } from './modules/helpers'
+import { swiperFunc } from './modules/swiper'
 
 const adaptive = new adaptivDesign
 
@@ -74,42 +74,33 @@ if(window.innerWidth >= 850){
     })
 }
 
+slideBar(arrSlidersId)
+sliders(arrSlidersId)
+selectMenu()
+optionsChoice()
+expandLink()
 
+swiperFunc('.container_swiper_turn', '.turn_dots', '.card_block_turn')
+swiperFunc('.container_swip_chooce', '.choose_dt', '.card_block_choose')
+swiperFunc('.container_rall_swiper', '.rall_dt', '.card_block_ralling')
+swiperFunc('.container_mat_swiper', '.mat_dt', '.wrapper_block_material')
 
-// slideBar(arrSlidersId)
-// sliders(arrSlidersId)
-// selectMenu()
-// optionsChoice()
-// expandLink()
+workerSlider()
+generateDot()
 
-// if(window.innerWidth <= 750){
-//     swiper([".card_block_turn", ".card_block_choose", ".card_block_ralling", ".wrapper_block_material"])
-// }
+if(window.innerWidth > 800){
+        mouseSliders.forEach((slider) => {
+            mouseSlider(slider)
+    })
+} else if(window.innerWidth <= 800){
+    projectSwip()
+}
 
-// window.addEventListener('resize', () => {
-//     if(window.innerWidth <= 750){
-//         swiper([".card_block_turn", ".card_block_choose", ".card_block_ralling", ".wrapper_block_material"])
-//     } else if(window.innerWidth > 750 && window.innerWidth < 1100){
-//         location.reload()
-//     }
-// })
-
-// workerSlider()
-// generateDot()
-
-// if(window.innerWidth > 800){
-//         mouseSliders.forEach((slider) => {
-//             mouseSlider(slider)
-//     })
-// } else if(window.innerWidth <= 800){
-//     projectSwip()
-// }
-
-// if(window.innerWidth <= 575){
-//     mobileTabs()
-// } else{
-//     answerQuestions()
-// }
+if(window.innerWidth <= 575){
+    mobileTabs()
+} else{
+    answerQuestions()
+}
 
 maskPhone('input[type="tel"]')
 

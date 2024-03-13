@@ -6,11 +6,6 @@ export class adaptivDesign {
         this.adaptStublock = document.querySelector(".adapt_block_stub");
         this.stubImg = document.querySelector(".stub_img_2");
         this.rightContPice = document.querySelector(".right_cont_price");
-
-        this.delMat = document.querySelector('#delMat')
-        this.delTurn = document.querySelector('#turnDel')
-        this.delChoose = document.querySelector('#chooDel')
-        this.delRall = document.querySelector('#rallDel')
     }
 
     changeText() {
