@@ -1,3 +1,54 @@
+.tizer_sub_char_block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.char_img_tizer{
+	margin-bottom: 15px !important;
+}
+
+.tizer_sub_char_item {
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+   	flex-direction: column;
+	padding: 10px;
+	max-width: 165px;
+	transition: .5s
+}
+
+.tizer_sub_char_item:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.col-auto{
+	width: 100% !important;
+	max-width:100% !important;
+}
+
+.tizer_char_text{
+margin: 0px !important;
+}
+
+.tizer_sub_char_item {
+	color: rgb(87, 87, 87);
+font-family: "Montserrat";
+font-size: 14px;
+font-weight: 700;
+line-height: 98%;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.tizer_char_text_strong{
+	margin-top: 5px !important;
+	margin-bottom: 0px !important;
+}
+
+
 @media (hover: hover) {
     .arrow_green_card_left:hover {
         background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
