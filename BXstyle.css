@@ -2428,6 +2428,11 @@ body {
         gap: 50px 10px;
     }
 
+	    .block_img_up,
+    .card_block_choose {
+        justify-content: center;
+    }
+
 .card_block_ralling,
     .wrapper_text_rall {
         justify-content: center;
@@ -2460,16 +2465,10 @@ body {
         flex-wrap: wrap;
     }
 
-    .block_img_up,
-    .card_block_choose {
-        justify-content: center;
-    }
-
     .container_osnov {
         padding-left: 20px;
         padding-right: 20px;
     }
-
 
     .card_block_disc {
         justify-content: center;
