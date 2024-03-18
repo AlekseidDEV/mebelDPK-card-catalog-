@@ -1287,7 +1287,7 @@ body {
 .card_block_disc {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 60px;
 }
 
