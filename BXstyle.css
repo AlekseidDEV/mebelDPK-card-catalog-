@@ -572,7 +572,7 @@ body {
 }
 
 .wrapper_block_material {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
@@ -731,7 +731,7 @@ body {
 
 .card_block_ralling {
     margin-top: 60px;
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -1140,7 +1140,7 @@ body {
 
 .card_block_choose {
     margin-top: 60px;
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
@@ -2408,6 +2408,7 @@ body {
 }
 
 .card_block_turn {
+	display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
