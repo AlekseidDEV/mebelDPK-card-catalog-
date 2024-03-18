@@ -2418,13 +2418,27 @@ body {
     max-width: 250px !important;
     width: 100%;
 }
-
-@media (max-width: 1500px) {
-    .card_block_turn {
+@media (max-width: 1560px) {
+.card_block_turn {
         justify-content: center;
         gap: 30px 10px;
     }
+    .wrapper_block_material {
+        justify-content: center;
+        gap: 50px 10px;
+    }
 
+.card_block_ralling,
+    .wrapper_text_rall {
+        justify-content: center;
+    }
+
+    .card_block_ralling {
+        gap: 60px 20px;
+    }
+}
+
+@media (max-width: 1500px) {
     .tit_sub_worker_que {
         margin-top: 0;
         margin-left: auto;
@@ -2465,20 +2479,6 @@ body {
 
     .price_number {
         font-size: calc(42px + (18 + 18 * 0.7) * ((100vw - 360px) / 1500));
-    }
-
-    .wrapper_block_material {
-        justify-content: center;
-        gap: 50px 10px;
-    }
-
-    .card_block_ralling,
-    .wrapper_text_rall {
-        justify-content: center;
-    }
-
-    .card_block_ralling {
-        gap: 60px 20px;
     }
 
     .card_rall_text_block {
