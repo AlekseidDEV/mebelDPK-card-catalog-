@@ -147,14 +147,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.swiper-pagination-progressbar-fill {
-    background: #2e9375 !important;
-}
-
-.swiper-pagination-progressbar {
-    background: #575757 !important;
-}
-
 .wrapp_items_slides {
     overflow: hidden;
     max-height: 1000px;
@@ -178,28 +170,6 @@ body {
 .wrapper_sect_item {
     height: 100%;
     width: 100%;
-}
-
-.swiper-container_worker {
-    position: relative;
-}
-
-.swiper-pagination {
-    height: 10px !important;
-    top: -30px !important;
-}
-
-.moveable-control-box {
-    display: none !important;
-}
-
-.rCS1w3zcxh .moveable-control.moveable-origin {
-    border-color: transparent !important;
-    background: 0 0 !important;
-}
-
-.rCS1w3zcxh {
-    --moveable-color: #ffffff00 !important;
 }
 
 .bitrix_cont_zero {
@@ -1967,10 +1937,6 @@ body {
     display: flex;
 }
 
-.swiper-container {
-    overflow: hidden;
-}
-
 .block_slider_text {
     display: flex;
     justify-content: space-between;
@@ -2428,10 +2394,6 @@ body {
     margin-top: 60px;
 }
 
-/* .swiper-slide {
-    height: auto !important;
-    display: flex !important;
-} */
 .img_smal_sert {
     max-width: 250px !important;
     width: 100%;
@@ -2892,16 +2854,7 @@ body {
     .block_text_choose_catch {
         display: none;
     }
-
-    .swiper {
-        margin-top: 30px;
-    }
-
-    .swiper img {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-
+	
     .title_sub_mat {
         margin-top: 20px;
     }
@@ -3324,38 +3277,12 @@ body {
 }
 
 @media (max-width: 414px) {
-    .card_block_choose {
-        flex-wrap: nowrap;
-        justify-content: start;
-    }
-
     .title_rall {
         font-size: 20px;
     }
 
     .sale_calc_btn {
         font-size: 16px;
-    }
-
-    .card_block_turn {
-        flex-wrap: nowrap;
-        margin-top: 0;
-    }
-
-    .container_swiper_turn {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .swiper-wrapper {
-        width: 100% !important;
-    }
-
-    .card_block_ralling,
-    .wrapper_block_material {
-        flex-wrap: nowrap;
-        overflow: hidden;
-        width: 1200px;
     }
 
     .wrapp_flow_turn {
