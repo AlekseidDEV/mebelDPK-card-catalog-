@@ -2408,7 +2408,7 @@ body {
 }
 
 .card_block_turn {
-	display: flex;
+	display: flex !important;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
