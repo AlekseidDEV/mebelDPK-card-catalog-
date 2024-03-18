@@ -1,3 +1,22 @@
+
+.carousel-progress {
+    background: #575757;
+  }
+  
+  .progress_bar_worker {
+    background: #2e9375;
+    height: 10px;
+    transition: width 400ms ease;
+    width: 0;
+  }
+
+  #swiper4,
+  #swiper3,
+  #swiper2,
+  #swiper1{
+    margin-top: 60px;
+  }
+
 .tizer_sub_char_block{
     display: flex;
     flex-wrap: wrap;
