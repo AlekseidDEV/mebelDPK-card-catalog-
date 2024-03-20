@@ -1,3 +1,46 @@
+.big_title_card{
+color:#2e9375;
+font-family: "Montserrat";
+font-size: 110px;
+font-weight: 700;
+line-height: 73px;
+text-align: left;
+}
+
+.salary_img{
+    max-width: 500px;
+    width: 100%;
+    flex: 1 0 calc(500px - 100px);
+}
+
+.null_wrapper{
+    max-width: 400px;
+    width: 100%;
+}
+
+.title_dis_card{
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    color: #575757;
+}
+
+.desc_text_card{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #000;
+}
+
+.wrapper_cont_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 30px;
+}
 
 .carousel-progress {
     background: #575757;
@@ -1014,6 +1057,7 @@ body {
     align-items: center;
     display: flex;
     font-size: 20px;
+border: none;
     font-weight: 700;
     position: relative;
     overflow: hidden;
@@ -1285,10 +1329,9 @@ body {
 }
 
 .card_block_disc {
+     margin-top: 60px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 60px;
+    align-items: center;
 }
 
 .title_disc {
@@ -1302,16 +1345,15 @@ body {
 
 .wrapper_cont_disc {
     display: flex;
-    gap: 10px 10px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    width: 100%;
 }
 
 .disc_card {
     display: flex;
-    max-width: 500px;
+    max-width: 467px;
     width: 100%;
-    height: 200px;
+    flex: 1 0 calc(467px - 100px);
 }
 
 .tit_dick_card,
@@ -1330,23 +1372,10 @@ body {
     font-weight: 400;
 }
 
-.percent_block_ {
-    display: block;
-    padding-top: 36px;
-}
-
 .text_all_dsc {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 36px;
-}
-
-.stub_img {
-    background: #2e9375;
-    display: flex;
-    max-width: 500px;
+    max-width: 250px;
     width: 100%;
+    margin-left: auto;
 }
 
 .price_calc_block {
@@ -2470,12 +2499,6 @@ body {
         padding-right: 20px;
     }
 
-    .card_block_disc {
-        justify-content: center;
-        gap: 20px;
-        flex-direction: row-reverse;
-    }
-
     .price_number {
         font-size: calc(42px + (18 + 18 * 0.7) * ((100vw - 360px) / 1500));
     }
@@ -2673,19 +2696,8 @@ body {
 }
 
 @media (max-width: 1060px) {
-    .card_block_disc {
-        flex-direction: row-reverse;
-        max-width: 1060px;
-        width: 100%;
-    }
-
     .txt_dick_card {
         font-size: 18px;
-    }
-
-    .tit_dick_card {
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 }
 
@@ -2963,10 +2975,6 @@ body {
 }
 
 @media (max-width: 600px) {
-    .card_block_disc {
-        margin-top: 30px;
-    }
-
     .wrapper_adapt_calc_price {
         flex-direction: column;
     }
@@ -3074,34 +3082,12 @@ body {
 }
 
 @media (max-width: 540px) {
-    .text_all_dsc {
-        justify-content: center;
-        padding-bottom: 0;
-    }
-
     .link_expand_rall {
         display: flex;
     }
 
     .number_bann_sub {
         font-size: 32px;
-    }
-
-    .percent_block_ {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .five_disc,
-    .free_disk,
-    .null {
-        max-width: 195px;
-        width: 100%;
-    }
-
-    .null {
-        max-width: 144px;
     }
 
     .card_block_ralling {
@@ -3308,20 +3294,6 @@ body {
         width: 1500px;
     }
 
-    .free_disk,
-    .null {
-        max-width: 144px !important;
-        width: 100%;
-    }
-
-    .null {
-        max-width: 120px !important;
-    }
-
-    .five_disc {
-        max-width: 154px !important;
-        width: 100%;
-    }
 
     .link_tabs_btn {
         font-size: 18px;
@@ -3388,19 +3360,6 @@ body {
 
     .pr_calc_title_sub {
         font-size: 18px;
-    }
-
-    .tit_dick_card {
-        font-size: 20px;
-    }
-
-    .wrapper_cont_disc {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .tit_dick_card {
-        text-align: center;
     }
 
     .title_card_turn {
