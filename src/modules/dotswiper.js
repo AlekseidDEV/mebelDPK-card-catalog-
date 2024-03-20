@@ -1,6 +1,6 @@
 export const generateDot = () => {
-    const swipers = document.querySelectorAll('.container_osnov .swiper')
-    
+    const swipers = document.querySelectorAll('.container_osnov .cont_splider')
+
         const addDots = (slides, dots) => {
         for (let i = 0; i <= slides.length - 1; i++) {
             const newDot = document.createElement('span')
@@ -20,9 +20,10 @@ export const generateDot = () => {
     }
 
     swipers.forEach((swip) => {
-        const allSlides = swip.querySelectorAll('.swiper-slide')
+        const allSlides = swip.querySelectorAll('.splide__slide')
         const dotBlock = swip.querySelector('.dots_wrapper')
 
-            addDots(allSlides, dotBlock)
+
+        addDots(allSlides, dotBlock)
     })
 }

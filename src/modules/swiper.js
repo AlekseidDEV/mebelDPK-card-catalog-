@@ -1,62 +1,50 @@
-import Swiper from "swiper"
+import Splide from '@splidejs/splide'
 
-import 'swiper/css';
-
-export const swiperFunc = (classSwiper, classDotsWrapper, delClass) => {
-   
-    let swiper = null
-
-    const changeDot = (index, blockDots, activeClass) => {
-        const allDots = blockDots.querySelectorAll('span')
-        const activeDot = blockDots.querySelector(activeClass)
-
-        activeDot.classList.remove(activeClass.slice(1))
-        allDots[index].classList.add(activeClass.slice(1))
-    }
-
-    const initSwiper = () => {
-        swiper = new Swiper(classSwiper,{
-                slidesPerView: "auto",
-                spaceBetween: 20,
-                passiveListeners: true,
-                grabCursor: true,
-                centeredSlides: true,
-            });
-
-            swiper.hostEl.style.marginTop = '30px'
-            swiper.dotBlock = document.querySelector(classDotsWrapper)
-            swiper.dotBlock.style.display = 'flex'
-
-
-        swiper.on('slideChange', (e) => {
-                changeDot(e.activeIndex, swiper.dotBlock, '.dotActive')
-            })
-    }
-
-    const defineClass = (check) => {
-        let wrapperClass = document.querySelector(delClass)
-
-        if(check && wrapperClass){
-            wrapperClass.classList.remove(delClass.slice(1))
-        } else if(!check){
-            wrapperClass = document.querySelector(`${classSwiper} .swiper-wrapper`)
-            wrapperClass.classList.add(delClass.slice(1))
+export const swiperFunc = (idSwiper) => {
+    const swiper = new Splide(idSwiper, {
+        perPage: 2,
+        arrows: false,
+        pagination: false,
+        perMove: 1, 
+        flickMaxPages: 1, 
+        mediaQuery: 'min',
+        breakpoints: {
+            630:{
+                destroy: true,
+            }
         }
+    })
+
+    const changeDot = () => {
+        const activeDot = swiper.root.querySelector('.dotActive')
+        const allDots = swiper.root.querySelectorAll('.dot')
+        
+        activeDot.classList.remove('dotActive')
+        allDots[swiper.index].classList.add('dotActive')
     }
 
-    const destroySwiper = () => {
-        if(swiper){
-            swiper.destroy()
-        } 
-    }
+    const delClasses = () => {
+        const delMat = document.getElementById('delMat')
+        const delRall = document.getElementById('rallDel')
+        const delTurn = document.getElementById('turnDel')
+        const delChoose = document.getElementById('chooDel')
 
-    const watherWindowWidth = () => {
-        if(window.innerWidth < 750){
-            initSwiper()
-            defineClass(true)
-        } else if(window.innerWidth >= 750){
-            destroySwiper()
-            defineClass(false)
+        const dotsWraper = swiper.root.querySelector('.dots_wrapper')
+
+        if(window.innerWidth < 630){
+            delMat.classList.remove('wrapper_block_material')
+            delRall.classList.remove('card_block_ralling')
+            delTurn.classList.remove('card_block_turn')
+            delChoose.classList.remove('card_block_choose')
+
+            dotsWraper.style.display = 'flex'
+        } else{
+            delMat.classList.add('wrapper_block_material')
+            delRall.classList.add('card_block_ralling')
+            delTurn.classList.add('card_block_turn')
+            delChoose.classList.add('card_block_choose')
+
+            dotsWraper.style.display = 'none'
         }
     }
 
@@ -69,6 +57,9 @@ export const swiperFunc = (classSwiper, classDotsWrapper, delClass) => {
         }
     }
 
-    window.addEventListener('load', watherWindowWidth)
-    window.addEventListener('resize', debounce(watherWindowWidth, 1000))
+    swiper.mount()
+
+    swiper.on('mounted move', changeDot)
+    window.addEventListener('load', delClasses)
+    window.addEventListener('resize', debounce(delClasses, 1000))
 }

@@ -72,10 +72,15 @@ export const sliders = (array) => {
 
 
     bitrixBlock.addEventListener("click", (e) => {
-        e.preventDefault();
+        let idSliders = ''
 
-        const idSliders = e.target.closest('div[id]') === null ? 'null_id': e.target.closest('div[id]').id;
-        
+        if(e.target.closest('div[id]') === null){
+            idSliders = 'null_id'
+        } else{
+            e.preventDefault()
+            idSliders = e.target.closest('div[id]').id
+        }
+
         array.forEach((id) => {
             if(id === idSliders){
                 startSlide(e.target.className, id, '.wrapp_items_slides')

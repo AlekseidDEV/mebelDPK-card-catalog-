@@ -4,17 +4,19 @@ import { sliders } from './modules/sliders'
 import { selectMenu } from './modules/selectListOpen'
 import { optionsChoice } from './modules/choiceOptions'
 import { expandLink } from './modules/expandlink'
-import { workerSlider } from './modules/workerslider'
 import { generateDot } from './modules/dotswiper'
 import { mouseSlider } from './modules/mouseslider'
-import { projectSwip } from './modules/projectswipe'
 import { mobileTabs } from './modules/mobiletabs'
 import { answerQuestions } from './modules/tabs'
 import { animateBlocks } from './modules/animateBlocks'
 import { maskPhone } from './modules/helpers'
 import { swiperFunc } from './modules/swiper'
+import { workerSlider } from './modules/workerslider'
+import { projectSwiper } from './modules/projectswiper'
 
 const adaptive = new adaptivDesign
+
+import '@splidejs/splide/css/core'
 
 const allsmalTitle = document.querySelectorAll('.grey_title')
 const allBigTitle = document.querySelectorAll('.green_title')
@@ -80,21 +82,23 @@ selectMenu()
 optionsChoice()
 expandLink()
 
-swiperFunc('.container_swiper_turn', '.turn_dots', '.card_block_turn')
-swiperFunc('.container_swip_chooce', '.choose_dt', '.card_block_choose')
-swiperFunc('.container_rall_swiper', '.rall_dt', '.card_block_ralling')
-swiperFunc('.container_mat_swiper', '.mat_dt', '.wrapper_block_material')
+swiperFunc("#swiper1")
+swiperFunc("#swiper2")
+swiperFunc("#swiper3")
+swiperFunc("#swiper4")
+
+if(window.innerWidth >= 801){
+    console.log(mouseSliders);
+    mouseSliders.forEach((slider) => {
+        mouseSlider(slider)
+    })
+} 
+
+projectSwiper("#swiper5")
+projectSwiper("#swiper6")
 
 workerSlider()
 generateDot()
-
-if(window.innerWidth > 800){
-        mouseSliders.forEach((slider) => {
-            mouseSlider(slider)
-    })
-} else if(window.innerWidth <= 800){
-    projectSwip()
-}
 
 if(window.innerWidth <= 575){
     mobileTabs()

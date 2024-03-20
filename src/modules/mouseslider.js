@@ -12,7 +12,6 @@ export const mouseSlider = (slider) => {
 
 
     const changeItem = (eventElem, indexStrip) => {
-
         const activeSlide = eventElem.querySelector('.active_touch')
         const slidesEvent = eventElem.querySelectorAll('.track_slids > img')
 
@@ -39,6 +38,6 @@ export const mouseSlider = (slider) => {
     generateScroller()
 
     ariaBlock.addEventListener('mouseover', (e) => {
-        changeItem(e.target.closest('div[id]'), e.target.dataset['index_img'])
+        changeItem(e.target.closest('div[name]'), e.target.dataset['index_img'])
     })
 }

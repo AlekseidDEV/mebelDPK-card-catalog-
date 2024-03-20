@@ -73,17 +73,17 @@ export const animateBlocks = (
         entries.forEach((entry) => {
             if (entry.isIntersecting || isElementVisible(entry.target)){
                 switch (true) {
-                    case entry.target.matches('.wrapper_block_material.swiper-wrapper'):
+                    case entry.target.matches('.wrapper_block_material'):
                         swimCard(entry.target, ".card_material");
                         observer.unobserve(entry.target);
                         break
 
-                    case entry.target.matches('.card_block_ralling.swiper-wrapper'):
+                    case entry.target.matches('.card_block_ralling'):
                         swimCard(entry.target, ".card_ralling_options");
                         observer.unobserve(entry.target);
                         break
 
-                    case entry.target.matches('.card_block_turn.swiper-wrapper'):
+                    case entry.target.matches('.card_block_turn'):
                         swimCard(entry.target, ".card_turn");
                         observer.unobserve(entry.target);
                         break
