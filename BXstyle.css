@@ -2064,7 +2064,7 @@ border: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-	flex-wrapp: wrap;
+	flex-wrap: wrap;
 	gap: 30px 10px;
 }
 
