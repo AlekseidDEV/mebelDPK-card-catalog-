@@ -2065,7 +2065,7 @@ border: none;
     align-items: center;
     justify-content: space-between;
 	flex-wrap: wrap;
-	gap: 30px 10px;
+	gap: 10px 10px;
 }
 
 .tit_phone_conn {
