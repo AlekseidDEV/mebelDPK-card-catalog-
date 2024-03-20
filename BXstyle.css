@@ -3592,9 +3592,3 @@ border: none;
 
 }
 
-@media (max-width: 725px) {
-    .naming_worker{
-        font-size: 18px;
-        padding: 10px 20px;
-    }
-}
