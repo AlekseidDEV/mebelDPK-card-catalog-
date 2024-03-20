@@ -3537,3 +3537,36 @@ border: none;
         font-size: 35px;
     }
 }
+@media (max-width: 1195px) {
+    .card_block_disc{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 818px) {
+    .wrapper_cont_card{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .big_title_card{
+        font-size: 80px;
+    }
+
+    .disc_card{
+        justify-content: center;
+    }
+
+    .text_all_dsc{
+        margin: auto;
+        text-align: center;
+    }
+
+   .percent_block_{
+    text-align: center;
+    margin-bottom: 20px;
+   }
+
+}
