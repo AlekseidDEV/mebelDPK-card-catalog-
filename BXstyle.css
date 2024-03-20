@@ -1,3 +1,22 @@
+
+.carousel-progress {
+    background: #575757;
+  }
+  
+  .progress_bar_worker {
+    background: #2e9375;
+    height: 10px;
+    transition: width 400ms ease;
+    width: 0;
+  }
+
+  #swiper4,
+  #swiper3,
+  #swiper2,
+  #swiper1{
+    margin-top: 60px;
+  }
+
 .tizer_sub_char_block{
     display: flex;
     flex-wrap: wrap;
@@ -147,14 +166,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.swiper-pagination-progressbar-fill {
-    background: #2e9375 !important;
-}
-
-.swiper-pagination-progressbar {
-    background: #575757 !important;
-}
-
 .wrapp_items_slides {
     overflow: hidden;
     max-height: 1000px;
@@ -178,28 +189,6 @@ body {
 .wrapper_sect_item {
     height: 100%;
     width: 100%;
-}
-
-.swiper-container_worker {
-    position: relative;
-}
-
-.swiper-pagination {
-    height: 10px !important;
-    top: -30px !important;
-}
-
-.moveable-control-box {
-    display: none !important;
-}
-
-.rCS1w3zcxh .moveable-control.moveable-origin {
-    border-color: transparent !important;
-    background: 0 0 !important;
-}
-
-.rCS1w3zcxh {
-    --moveable-color: #ffffff00 !important;
 }
 
 .bitrix_cont_zero {
@@ -583,7 +572,7 @@ body {
 }
 
 .wrapper_block_material {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
@@ -742,7 +731,7 @@ body {
 
 .card_block_ralling {
     margin-top: 60px;
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -1151,7 +1140,7 @@ body {
 
 .card_block_choose {
     margin-top: 60px;
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
@@ -1298,7 +1287,7 @@ body {
 .card_block_disc {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 60px;
 }
 
@@ -1967,10 +1956,6 @@ body {
     display: flex;
 }
 
-.swiper-container {
-    overflow: hidden;
-}
-
 .block_slider_text {
     display: flex;
     justify-content: space-between;
@@ -2423,26 +2408,42 @@ body {
 }
 
 .card_block_turn {
+	display: flex !important;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
 }
 
-/* .swiper-slide {
-    height: auto !important;
-    display: flex !important;
-} */
 .img_smal_sert {
     max-width: 250px !important;
     width: 100%;
 }
-
-@media (max-width: 1500px) {
-    .card_block_turn {
+@media (max-width: 1560px) {
+.card_block_turn {
         justify-content: center;
         gap: 30px 10px;
     }
+    .wrapper_block_material {
+        justify-content: center;
+        gap: 50px 10px;
+    }
 
+	    .block_img_up,
+    .card_block_choose {
+        justify-content: center;
+    }
+
+.card_block_ralling,
+    .wrapper_text_rall {
+        justify-content: center;
+    }
+
+    .card_block_ralling {
+        gap: 60px 20px;
+    }
+}
+
+@media (max-width: 1500px) {
     .tit_sub_worker_que {
         margin-top: 0;
         margin-left: auto;
@@ -2464,16 +2465,10 @@ body {
         flex-wrap: wrap;
     }
 
-    .block_img_up,
-    .card_block_choose {
-        justify-content: center;
-    }
-
     .container_osnov {
         padding-left: 20px;
         padding-right: 20px;
     }
-
 
     .card_block_disc {
         justify-content: center;
@@ -2483,20 +2478,6 @@ body {
 
     .price_number {
         font-size: calc(42px + (18 + 18 * 0.7) * ((100vw - 360px) / 1500));
-    }
-
-    .wrapper_block_material {
-        justify-content: center;
-        gap: 50px 10px;
-    }
-
-    .card_block_ralling,
-    .wrapper_text_rall {
-        justify-content: center;
-    }
-
-    .card_block_ralling {
-        gap: 60px 20px;
     }
 
     .card_rall_text_block {
@@ -2892,16 +2873,7 @@ body {
     .block_text_choose_catch {
         display: none;
     }
-
-    .swiper {
-        margin-top: 30px;
-    }
-
-    .swiper img {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-
+	
     .title_sub_mat {
         margin-top: 20px;
     }
@@ -3324,38 +3296,12 @@ body {
 }
 
 @media (max-width: 414px) {
-    .card_block_choose {
-        flex-wrap: nowrap;
-        justify-content: start;
-    }
-
     .title_rall {
         font-size: 20px;
     }
 
     .sale_calc_btn {
         font-size: 16px;
-    }
-
-    .card_block_turn {
-        flex-wrap: nowrap;
-        margin-top: 0;
-    }
-
-    .container_swiper_turn {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .swiper-wrapper {
-        width: 100% !important;
-    }
-
-    .card_block_ralling,
-    .wrapper_block_material {
-        flex-wrap: nowrap;
-        overflow: hidden;
-        width: 1200px;
     }
 
     .wrapp_flow_turn {
