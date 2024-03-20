@@ -1893,8 +1893,11 @@ border: none;
 }
 
 .soc_link,
-.worker_card>img,
 .you {
+    max-width: 100%;
+}
+
+.worker_card img{
     max-width: 100%;
 }
 
