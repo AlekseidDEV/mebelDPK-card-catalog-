@@ -7,6 +7,23 @@ line-height: 73px;
 text-align: left;
 }
 
+.naming_worker{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    font-family: "Montserrat";
+    font-weight: 700;
+font-size: 24px;
+color: #fff;
+background: #2e9375;
+padding: 10px 30px;
+}
+
+
+.wrapper_naming{
+    position: relative;
+}
+
 .salary_img{
     max-width: 500px;
     width: 100%;
@@ -3573,4 +3590,11 @@ border: none;
     margin-bottom: 20px;
    }
 
+}
+
+@media (max-width: 725px) {
+    .naming_worker{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
 }
