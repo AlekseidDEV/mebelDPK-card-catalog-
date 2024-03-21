@@ -3577,7 +3577,7 @@ border: none;
     }
 }
 
-@media (max-width: 818px) {
+@media (max-width: 895px) {
     .wrapper_cont_card{
         justify-content: center;
     }
