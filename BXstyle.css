@@ -955,13 +955,7 @@ body {
     display: none !important;
 }
 
-.active_slide {
-    opacity: 1 !important;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: opacity 0.7s !important;
-}
+
 
 .get_catalog_block {
     margin-top: 130px;
@@ -2379,12 +2373,6 @@ border: none;
     margin-top: 20px;
 }
 
-.adapt_stub_image {
-    width: 100%;
-    height: 493px;
-    object-fit: fill;
-    opacity: 0;
-}
 
 .ex_ona_factory,
 .ex_two_factory {
@@ -3025,10 +3013,6 @@ border: none;
     .factory_title {
         text-align: right;
     }
-
-    .adapt_stub_image {
-        height: 100%;
-    }
 }
 
 @media (max-width: 585px) {
@@ -3606,5 +3590,13 @@ border: none;
     margin-bottom: 20px;
    }
 
+}
+
+.active_slide {
+    opacity: 1 !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 0.7s;
 }
 
