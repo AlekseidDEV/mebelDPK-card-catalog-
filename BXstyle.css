@@ -7,6 +7,11 @@ line-height: 73px;
 text-align: left;
 }
 
+.worker_tabs_img{
+    max-width: 244px;
+    width: 100%;
+}
+
 .naming_worker{
     position: absolute;
     bottom: 30px;
