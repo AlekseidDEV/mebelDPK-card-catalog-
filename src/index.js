@@ -13,10 +13,11 @@ import { maskPhone } from './modules/helpers'
 import { swiperFunc } from './modules/swiper'
 import { workerSlider } from './modules/workerslider'
 import { projectSwiper } from './modules/projectswiper'
+import { getCatalogForm } from './modules/getcatalogform'
+import { sliderAlt } from './modules/slideralt'
+import '@splidejs/splide/css/core'
 
 const adaptive = new adaptivDesign
-
-import '@splidejs/splide/css/core'
 
 const allsmalTitle = document.querySelectorAll('.grey_title')
 const allBigTitle = document.querySelectorAll('.green_title')
@@ -77,7 +78,13 @@ if(window.innerWidth >= 850){
 }
 
 slideBar(arrSlidersId)
-sliders(arrSlidersId)
+
+sliders('slider-1', '.wrapp_items_slides')
+sliders('slider-2', '.wrapp_items_slides')
+sliders('slider-3', '.wrapp_items_slides')
+sliders('slide-5', '.wrapp_items_slides')
+
+
 selectMenu()
 optionsChoice()
 expandLink()
@@ -88,7 +95,6 @@ swiperFunc("#swiper3")
 swiperFunc("#swiper4")
 
 if(window.innerWidth >= 801){
-    console.log(mouseSliders);
     mouseSliders.forEach((slider) => {
         mouseSlider(slider)
     })
@@ -105,6 +111,9 @@ if(window.innerWidth <= 575){
 } else{
     answerQuestions()
 }
+
+getCatalogForm()
+sliderAlt()
 
 maskPhone('input[type="tel"]')
 

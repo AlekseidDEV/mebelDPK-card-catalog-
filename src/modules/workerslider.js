@@ -42,6 +42,7 @@ export const workerSlider = () => {
     })
 
     arrowsBlock.addEventListener("click", (e) => {
+        e.preventDefault()
         if(e.target.className === 'link_slide_our'){
             splider.go('-')
         }else if(e.target.className === 'link_slide_our_right'){

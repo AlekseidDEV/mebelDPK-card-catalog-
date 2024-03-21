@@ -45,7 +45,7 @@ export const selectMenu = () =>{
     }
 
     options.addEventListener('click', (e) => {
-
+        e.preventDefault()
         if(options.contains(e.target)){
             dropMenu()
         } else{

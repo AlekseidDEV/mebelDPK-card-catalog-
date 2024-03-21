@@ -1,11 +1,82 @@
+/* .block_tabs_question {
+    display: none;
+} */
+
+/* *{
+    border: 1px solid red !important;
+} */
+
 
 /*! правки по стилям */
 
 /*! правки по стилям */
 
+.naming_worker{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    font-family: "Montserrat";
+    font-weight: 700;
+font-size: 24px;
+color: #fff;
+background: #2e9375;
+padding: 10px 30px;
+}
 
+.wrapper_naming{
+    position: relative;
+}
 
+@media (max-width: 725px) {
+    .naming_worker{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
 
+.big_title_card{
+    color:#2e9375;
+    font-family: "Montserrat";
+    font-size: 110px;
+    font-weight: 700;
+    line-height: 73px;
+    text-align: left;
+    }
+    
+    .salary_img{
+        max-width: 500px;
+        width: 100%;
+        flex: 1 0 calc(500px - 100px);
+    }
+    
+    .null_wrapper{
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .title_dis_card{
+        font-family: "Montserrat";
+        font-style: italic;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: right;
+        color: #575757;
+    }
+    
+    .desc_text_card{
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 18px;
+        text-align: right;
+        color: #000;
+    }
+    
+    .wrapper_cont_card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 60px 30px;
+    }
 
 .carousel-progress {
     background: #575757;
@@ -128,7 +199,7 @@ body {
     overflow: hidden;
 }
 
-.bitrix_cont_zero a {
+.bitrix_cont_zero a{
     text-decoration: none;
 }
 
@@ -1696,6 +1767,8 @@ body {
     margin-top: 10px;
 }
 
+
+
 .get_catalog_btn {
     background: #575757;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
@@ -1705,6 +1778,7 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
+    border: none;
     /* text */
     color: #fff;
     font-family: "Montserrat";
@@ -1715,6 +1789,7 @@ body {
     position: relative;
     overflow: hidden;
 }
+
 
 /* ======================================================== */
 
@@ -2011,10 +2086,9 @@ body {
 }
 
 .card_block_disc {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 60px;
+    display: flex;
+    align-items: center;
 }
 
 .title_disc {
@@ -2028,16 +2102,15 @@ body {
 
 .wrapper_cont_disc {
     display: flex;
-    gap: 10px 10px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    width: 100%;
 }
 
 .disc_card {
     display: flex;
-    max-width: 500px;
+    max-width: 467px;
     width: 100%;
-    height: 200px;
+    flex: 1 0 calc(467px - 100px);
 }
 
 .tit_dick_card {
@@ -2058,23 +2131,10 @@ body {
     line-height: normal;
 }
 
-.percent_block_ {
-    display: block;
-    padding-top: 36px;
-}
-
 .text_all_dsc {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 36px;
-}
-
-.stub_img {
-    background: #2e9375;
-    display: flex;
-    max-width: 500px;
+    max-width: 250px;
     width: 100%;
+    margin-left: auto;
 }
 
 /* ========================================================= */
@@ -2785,12 +2845,20 @@ body {
 }
 
 .worker_card {
+    /*!  */
     max-width: 320px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;
 }
 
-.worker_card>img {
+.worker_tabs_img{
+    max-width: 244px;
+    width: 100%;
+}
+
+.worker_card img{
     max-width: 100%;
 }
 
@@ -2900,6 +2968,7 @@ body {
 .container_answer {
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 
 .tab_info_cont {
@@ -3137,12 +3206,7 @@ body {
     margin-top: 20px;
 }
 
-.adapt_stub_image {
-    width: 100%;
-    height: 493px;
-    object-fit: fill;
-    opacity: 0;
-}
+
 
 .ex_ona_factory,
 .ex_two_factory {
@@ -3299,12 +3363,6 @@ body {
 
     .left_cont_card {
         margin-right: 30px;
-    }
-
-    .card_block_disc {
-        justify-content: center;
-        gap: 20px;
-        flex-direction: row-reverse;
     }
 
     .price_number {
@@ -3565,19 +3623,8 @@ body {
 }
 
 @media (max-width: 1060px) {
-    .card_block_disc {
-        flex-direction: row-reverse;
-        max-width: 1060px;
-        width: 100%;
-    }
-
     .txt_dick_card {
         font-size: 18px;
-    }
-
-    .tit_dick_card {
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 }
 
@@ -3879,10 +3926,6 @@ body {
 }
 
 @media (max-width: 600px) {
-    .card_block_disc {
-        margin-top: 30px;
-    }
-
     .wrapper_adapt_calc_price {
         flex-direction: column;
     }
@@ -3997,11 +4040,6 @@ body {
 }
 
 @media (max-width: 540px) {
-    .text_all_dsc {
-        justify-content: center;
-        padding-bottom: 0;
-    }
-
     .link_expand_rall {
         display: flex;
     }
@@ -4012,27 +4050,6 @@ body {
 
     .blockgabarit{
         margin: 10px auto;
-    }
-
-    .percent_block_ {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .free_disk {
-        max-width: 195px;
-        width: 100%;
-    }
-
-    .five_disc {
-        max-width: 195px;
-        width: 100%;
-    }
-
-    .null {
-        max-width: 144px;
-        width: 100%;
     }
 
     .strip_text_char {
@@ -4307,21 +4324,6 @@ body {
         width: 1500px;
     }
 
-    .free_disk {
-        max-width: 144px;
-        width: 100%;
-    }
-
-    .null {
-        max-width: 120px;
-        width: 100%;
-    }
-
-    .five_disc {
-        max-width: 154px;
-        width: 100%;
-    }
-
     .btn_sign {
         padding: 20px 21px;
     }
@@ -4409,19 +4411,6 @@ body {
 
     .pr_calc_title_sub {
         font-size: 18px;
-    }
-
-    .tit_dick_card {
-        font-size: 20px;
-    }
-
-    .wrapper_cont_disc {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .tit_dick_card {
-        text-align: center;
     }
 
     .title_card_turn {
@@ -4612,4 +4601,55 @@ body {
         padding-left: 8px;
         padding-right: 8px;
     }
+}
+
+
+@media (max-width: 1195px) {
+    .card_block_disc{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 818px) {
+    .wrapper_cont_card{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .big_title_card{
+        font-size: 80px;
+    }
+
+    .disc_card{
+        justify-content: center;
+    }
+
+    .text_all_dsc{
+        margin: auto;
+        text-align: center;
+    }
+
+   .percent_block_{
+    text-align: center;
+    margin-bottom: 20px;
+   }
+
+}
+
+.cont_worker_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 500px;
+    height: 100%;
+}
+
+.mobile_tit_block img{
+    max-width: 63px;
+    max-height: 63px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50px;
 }

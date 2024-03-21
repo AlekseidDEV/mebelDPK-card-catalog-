@@ -1,7 +1,8 @@
-export const sliders = (array) => {
-    const bitrixBlock = document.querySelector(".bitrix_cont_zero");
+export const sliders = (id, wrapper) => {
+    const slider = document.getElementById(id)
+    const slides = slider.querySelectorAll(`${wrapper} > *`)
 
-    const slidersState = {}
+    let count = 0
 
     const changeStrip = (slideBar, index) => {
         const strips = slideBar.querySelectorAll('.progress_bar')
@@ -10,83 +11,46 @@ export const sliders = (array) => {
         activeStripe.classList.add('progress_bar')
         activeStripe.classList.remove('active_bar')
         strips[index].classList.add('active_bar')
-
     }
 
-    const nextSlide = (obj, act_slide) => {
-        const { slider, slides, count } = obj;
+    const nextSlide = (slider, slides, classActive) => {
+        const activeSlide = slider.querySelector(classActive)
+        
+        ++count
 
-        const activeslide = slider.querySelector(act_slide)
-
-        obj.count++
-
-        if(obj.count >= slides.length){
-            obj.count = 0
+        if(count >= slides.length){
+            count = 0
         }
+    
+        activeSlide.classList.remove(classActive.slice(1))
+        slides[count].classList.add(classActive.slice(1))
 
-        changeStrip(slider.querySelector('.slide_bar'), obj.count)
-
-        activeslide.classList.remove(act_slide.slice(1))
-        slides[obj.count].classList.add(act_slide.slice(1))
+        changeStrip(slider.querySelector('.slide_bar'), count)
     }
 
-    const prevSlide = (obj, act_slide) => {
-        const { slider, slides} = obj;
+    const prevSlide = (slider, slides, classActive) => {
+        const activeslide = slider.querySelector(classActive)
 
-        const activeslide = slider.querySelector(act_slide)
+        --count
 
-        obj.count--
-
-        if(obj.count < 0){
-            obj.count = slides.length - 1
+        if(count < 0){
+            count = slides.length - 1
         }
 
-        changeStrip(slider.querySelector('.slide_bar'), obj.count)
+        activeslide.classList.remove(classActive.slice(1))
+        slides[count].classList.add(classActive.slice(1))
 
-        activeslide.classList.remove(act_slide.slice(1))
-        slides[obj.count].classList.add(act_slide.slice(1))
+        changeStrip(slider.querySelector('.slide_bar'), count)
     }
 
 
-    const startSlide = (arrow, id, wrapper) => {
-        const slider = document.getElementById(id)
-        const slides = slider.querySelectorAll(`${wrapper} > *`)
+    slider.addEventListener('click', (e) => {
+        e.preventDefault()
 
-        if(!slidersState[id]){
-            slidersState[id] = {
-                slider,
-                slides,
-                count : 0
-            }
+        if (e.target.className === "arrow_green_slide_right" || e.target.className  === "arrow_grey_slide_right" || e.target.className  === "arrow_green_card_right") {
+            nextSlide(slider, slides, ".active_slide")
+        } else if (e.target.className === "arrow_grey_slide_left" || e.target.className  === "arrow_green_slide_left" || e.target.className  === "arrow_green_card_left") {
+            prevSlide(slider, slides, ".active_slide")
         }
-
-        const sliderState = slidersState[id];
-
-        if (arrow === "arrow_green_slide_right" || arrow  === "arrow_grey_slide_right" || arrow  === "arrow_green_card_right") {
-            nextSlide(sliderState, ".active_slide");
-        } else if (arrow === "arrow_grey_slide_left" || arrow  === "arrow_green_slide_left" || arrow  === "arrow_green_card_left") {
-            prevSlide(sliderState, '.active_slide');
-        }
-    }
-
-
-
-    bitrixBlock.addEventListener("click", (e) => {
-        let idSliders = ''
-
-        if(e.target.closest('div[id]') === null){
-            idSliders = 'null_id'
-        } else{
-            e.preventDefault()
-            idSliders = e.target.closest('div[id]').id
-        }
-
-        array.forEach((id) => {
-            if(id === idSliders){
-                startSlide(e.target.className, id, '.wrapp_items_slides')
-            } else{
-                return
-            }
-        })
-    });
+    })
 };

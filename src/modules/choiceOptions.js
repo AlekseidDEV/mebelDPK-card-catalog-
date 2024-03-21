@@ -19,6 +19,7 @@ export const optionsChoice = () => {
     }
 
     menuPanel.addEventListener('click', (e) => {
+        e.preventDefault()
         if(menuPanel.contains(e.target)){
             changePanelMenu(e, e.target.closest('div[data-socials]'))
         }

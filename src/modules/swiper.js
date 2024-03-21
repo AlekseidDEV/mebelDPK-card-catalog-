@@ -2,8 +2,9 @@ import Splide from '@splidejs/splide'
 
 export const swiperFunc = (idSwiper) => {
     const swiper = new Splide(idSwiper, {
-        perPage: 2,
+        perPage: 1,
         arrows: false,
+        gap: "30px", 
         pagination: false,
         perMove: 1, 
         flickMaxPages: 1, 
