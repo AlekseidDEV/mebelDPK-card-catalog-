@@ -2130,6 +2130,11 @@ border: none;
     justify-content: space-between;
 }
 
+.container_answer{
+	overflow: hidden;
+}
+
+
 .block_tab_cont,
 .container_answer {
     display: flex;
@@ -3598,5 +3603,13 @@ border: none;
     left: 0;
     top: 0;
     transition: opacity 0.7s;
+}
+
+.mobile_tit_block img{
+    max-width: 63px;
+    max-height: 63px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50px;
 }
 
