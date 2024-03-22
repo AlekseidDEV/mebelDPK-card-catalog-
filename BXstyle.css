@@ -52,6 +52,7 @@ padding: 10px 30px;
     font-style: italic;
     font-weight: 700;
     font-size: 40px;
+	line-height: normal;
     text-align: right;
     color: #575757;
 margin-bottom: 15px;
@@ -1273,17 +1274,17 @@ border: none;
 }
 
 .one::after {
-    background: url(./img/1.svg) no-repeat center;
+    background: url(img/1.svg) no-repeat center;
     width: 75px;
 }
 
 .two::after {
-    background: url(./img/2.svg) no-repeat center;
+    background: url(img/2.svg) no-repeat center;
     width: 142px;
 }
 
 .free::after {
-    background: url(./img/3.svg) no-repeat center;
+    background: url(img/3.svg) no-repeat center;
     width: 128px;
 }
 
@@ -1298,12 +1299,12 @@ border: none;
 }
 
 .four::after {
-    background: url(./img/4.svg) no-repeat center;
+    background: url(img/4.svg) no-repeat center;
     width: 150px;
 }
 
 .five::after {
-    background: url(./img/5.svg) no-repeat center;
+    background: url(img/5.svg) no-repeat center;
     width: 128px;
 }
 
