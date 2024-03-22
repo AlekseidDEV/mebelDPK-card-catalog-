@@ -7,6 +7,13 @@ line-height: 73px;
 text-align: left;
 }
 
+.adapt_stub_image {
+    max-width: 841px;
+    width: 100%;
+    height: 493px;
+    object-fit: cover;
+}
+
 .worker_tabs_img{
     max-width: 244px;
     width: 100%;
@@ -3567,6 +3574,9 @@ border: none;
     .card_block_disc{
         flex-direction: column;
         gap: 30px;
+    }
+.margin-top_class{
+        margin-top: 20px;
     }
 }
 
