@@ -957,6 +957,8 @@ body {
     width: 100%;
     opacity: 0 !important;
     transition: opacity 0.7s !important;
+max-height: 493px;
+object-fit: contain;
 }
 
 .card_big_img {
@@ -1274,17 +1276,17 @@ border: none;
 }
 
 .one::after {
-    background: url(img/1.svg) no-repeat center;
+    background: url(https://dev.mebeldpk.ru/upload/medialibrary/276/51pkxfbmvn883z1ikqcqymlsp05hww87.svg) no-repeat center;
     width: 75px;
 }
 
 .two::after {
-    background: url(img/2.svg) no-repeat center;
+    background: url(https://dev.mebeldpk.ru/upload/medialibrary/4d7/x7mpwgorjc48bjct2gj1b6bikomnd8mr.svg) no-repeat center;
     width: 142px;
 }
 
 .free::after {
-    background: url(img/3.svg) no-repeat center;
+    background: url(https://dev.mebeldpk.ru/upload/medialibrary/f06/ub3lfpxl1rjsugac0xdyymbalamoekgp.svg) no-repeat center;
     width: 128px;
 }
 
@@ -1299,12 +1301,12 @@ border: none;
 }
 
 .four::after {
-    background: url(img/4.svg) no-repeat center;
+    background: url(https://dev.mebeldpk.ru/upload/medialibrary/fa4/k8oc59hnjfpsmgov46a5y3khm5tlguf9.svg) no-repeat center;
     width: 150px;
 }
 
 .five::after {
-    background: url(img/5.svg) no-repeat center;
+    background: url(https://dev.mebeldpk.ru/upload/medialibrary/c5b/jtjo3buqck14jsus2i66n1t0xo8abs1e.svg) no-repeat center;
     width: 128px;
 }
 
@@ -1624,7 +1626,7 @@ border: none;
 }
 
 .link_play_factory {
-    background: url(./img/play.svg) no-repeat center/cover;
+    background: url(https://dev.mebeldpk.ru/upload/medialibrary/b1b/oqjx1uztuas9255fspxb3yt1ezmqgak2.svg) no-repeat center/cover;
     cursor: pointer;
     z-index: 2;
 }
@@ -1975,7 +1977,6 @@ border: none;
     line-height: normal;
     display: flex;
     justify-content: center;
-    padding-left: 250px;
 }
 
 .wrapp_tit_our {
@@ -2278,7 +2279,7 @@ border: none;
 }
 
 .link_whats_sqw {
-    background: url(./img/Group\ 75.svg) no-repeat center;
+    background: url(https://dev.mebeldpk.ru/upload/medialibrary/c9d/j0wtvoic2850mgeay5ppvyo66jksf7u5.svg) no-repeat center;
     display: flex;
     width: 125px;
     height: 125px;
@@ -2325,7 +2326,7 @@ border: none;
 }
 
 .dropp_down {
-    background: url(./img/feArrowUp2.svg) no-repeat center;
+    background: url(https://dev.mebeldpk.ru/upload/medialibrary/9de/04wbnzljh8zw1rt5aru6w2zcq3vbdjea.svg) no-repeat center;
     width: 27px;
     height: 17px;
     display: flex;
