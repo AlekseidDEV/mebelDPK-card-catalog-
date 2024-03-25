@@ -1906,18 +1906,6 @@ border: none;
     margin-top: 130px;
 }
 
-.up_card {
-    max-width: 100%;
-    min-width: 100px;
-}
-
-.block_img_up {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 40px;
-}
-
 .soc_link,
 .you {
     max-width: 100%;
@@ -2497,7 +2485,7 @@ margin-left: 30px;
         gap: 50px 10px;
     }
 
-	    .block_img_up,
+	
     .card_block_choose {
         justify-content: center;
     }
@@ -2528,10 +2516,6 @@ margin-left: 30px;
 
     .tabs_all_list {
         margin-right: 25px;
-    }
-
-    .block_img_up {
-        flex-wrap: wrap;
     }
 
     .container_osnov {
@@ -2858,12 +2842,6 @@ margin-left: 30px;
     }
 }
 
-@media (max-width: 815px) {
-    .block_img_up {
-        flex-wrap: nowrap;
-    }
-}
-
 @media (max-width: 800px) {
     .block_slider_text {
         margin-top: 30px;
@@ -3144,12 +3122,6 @@ margin-left: 30px;
 
     .card_rall_text_block {
         margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 530px) {
-    .block_img_up {
-        flex-wrap: wrap;
     }
 }
 
