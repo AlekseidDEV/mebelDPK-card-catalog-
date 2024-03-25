@@ -6,7 +6,12 @@ font-weight: 700;
 line-height: 73px;
 text-align: left;
 }
-
+.guarantee{
+	margin-top: 20px;
+    color: #575757;
+    font-size: 40px;
+    font-style: italic;
+}
 .adapt_stub_image {
     max-width: 841px;
     width: 100%;
@@ -453,8 +458,7 @@ body {
 .btn_all_proj,
 .diff_btn,
 .get_catalog_btn,
-.sale_calc_btn,
-.sert_btn {
+.sale_calc_btn{
     color: #fff !important;
 }
 
@@ -1670,29 +1674,6 @@ border: none;
     margin-top: 30px;
 }
 
-.sert_btn {
-    display: flex;
-    padding: 20px 80px;
-    justify-content: center;
-    align-items: center;
-    background: #2e9375;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-    font-family: "Montserrat";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: relative;
-    overflow: hidden;
-}
-
-.wrapper_sert_btn {
-    max-width: 427px;
-    width: 100%;
-    margin-left: auto;
-    margin-top: 60px;
-}
-
 .exampl_work_block {
     margin-top: 130px;
 }
@@ -2724,13 +2705,6 @@ margin-left: 30px;
         font-size: 18px;
     }
 }
-
-@media (max-width: 945px) {
-    .sert_btn {
-        padding: 20px 40px;
-    }
-}
-
 @media (max-width: 900px) {
 
     .factory_title,
@@ -2795,8 +2769,7 @@ margin-left: 30px;
         margin-top: 0;
     }
 
-    .div_cust_1,
-    .wrapper_sert_btn {
+    .div_cust_1{
         margin: 40px auto 0;
     }
 }
@@ -3340,8 +3313,7 @@ margin-left: 30px;
     }
 
     .btn_all_proj,
-    .factory_title_sub,
-    .sert_btn {
+    .factory_title_sub {
         font-size: 18px;
     }
 
@@ -3511,13 +3483,6 @@ margin-left: 30px;
         font-size: 18px;
     }
 
-    .sert_btn {
-        padding: 10px;
-    }
-
-    .wrapper_sert_btn {
-        margin-top: 15px;
-    }
 }
 
 @media (max-width: 315px) {
