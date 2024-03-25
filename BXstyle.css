@@ -2153,6 +2153,7 @@ border: none;
 .tab_info_cont {
     gap: 0 108px;
     display: none;
+margin-left: 30px;
 }
 
 .active_tb {
