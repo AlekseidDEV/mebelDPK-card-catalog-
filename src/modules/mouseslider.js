@@ -23,13 +23,11 @@ export const mouseSlider = (slider) => {
 
     const generateScroller = () => {
 
-        let dataCounter = 0
-
         for (let item = 0; item < slides.length; item++) {
             const newSpan = document.createElement('span')
 
             newSpan.classList.add('wrapper_sect_item')
-            newSpan.dataset.index_img = dataCounter++
+            newSpan.dataset.index_img = item
 
             ariaBlock.appendChild(newSpan)
         }
@@ -38,6 +36,8 @@ export const mouseSlider = (slider) => {
     generateScroller()
 
     ariaBlock.addEventListener('mouseover', (e) => {
-        changeItem(e.target.closest('div[name]'), e.target.dataset['index_img'])
+        let currentTarget = e.fromElement.dataset['index_img'] || 0
+        let dataIndex = e.target.dataset['index_img'] === undefined ? currentTarget : e.target.dataset['index_img']
+        changeItem(e.target.closest('div[name="swipersTouch"]'), dataIndex)
     })
 }

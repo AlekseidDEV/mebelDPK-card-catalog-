@@ -53,7 +53,6 @@ if(window.innerWidth >= 850){
         '.wrapper_block_sertif', 
         '.anim_swap', 
         '.wrapper_cont_think', 
-        '.block_img_up', 
         '.block_social_link',
         '.wrap_text', 
         '.block_card_work',
@@ -100,8 +99,8 @@ if(window.innerWidth >= 801){
     })
 } 
 
-projectSwiper("#swiper5")
-projectSwiper("#swiper6")
+projectSwiper("#spliper1")
+projectSwiper("#spliper2")
 
 workerSlider()
 generateDot()

@@ -13,7 +13,6 @@ export const animateBlocks = (
     sertificate,
     projCard,
     think,
-    imgIcons,
     socialLink,
     workerText,
     cardWork,
@@ -42,7 +41,6 @@ export const animateBlocks = (
         { elem: document.querySelector(factory) },
         { elem: document.querySelector(sertificate) },
         { elem: document.querySelector(think) },
-        { elem: document.querySelector(imgIcons) },
         { elem: document.querySelector(cardWork) },
     ];
 
@@ -110,11 +108,6 @@ export const animateBlocks = (
 
                     case entry.target.classList.contains(think.slice(1)):
                         swimCard(entry.target, ".obs_think", 40);
-                        observer.unobserve(entry.target);
-                        break
-
-                    case entry.target.classList.contains(imgIcons.slice(1)):
-                        swimCard(entry.target, "div", 80);
                         observer.unobserve(entry.target);
                         break
 

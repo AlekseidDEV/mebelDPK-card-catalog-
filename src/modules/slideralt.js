@@ -8,7 +8,13 @@ export const sliderAlt = () => {
     const slideAltel = new Splide('#altslider', {
         perPage: 1,
         arrows: false,
-        pagination: false
+        pagination: false,
+        fixedHeight: "493px",
+        breakpoints:{
+            619:{
+                fixedHeight: null
+            }
+        }
     }).mount()
 
     const changePagin = () => {
