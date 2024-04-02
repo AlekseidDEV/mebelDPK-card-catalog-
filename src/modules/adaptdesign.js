@@ -9,26 +9,26 @@ export class adaptivDesign {
     }
 
     changeText() {
-        if (window.innerWidth <= "532") {
-            document.querySelector(".title_sup_mat").innerHTML = `Возможные <br> материалы и цвета -`;
-            document.querySelector(".title_sub_mat").innerHTML = `выберете наиболее <br> подходящие для вашего дома`;
-        } else if (window.innerWidth >= "532") {
-            document.querySelector(".title_sup_mat").innerHTML = `Возможные материалы и цвета`;
-            document.querySelector(".title_sub_mat").innerHTML = `выберете наиболее подходящие для вашего дома`;
-        }
+        // if (window.innerWidth <= "532") {
+        //     document.querySelector(".title_sup_mat").innerHTML = `Возможные <br> материалы и цвета -`;
+        //     document.querySelector(".title_sub_mat").innerHTML = `выберете наиболее <br> подходящие для вашего дома`;
+        // } else if (window.innerWidth >= "532") {
+        //     document.querySelector(".title_sup_mat").innerHTML = `Возможные материалы и цвета`;
+        //     document.querySelector(".title_sub_mat").innerHTML = `выберете наиболее подходящие для вашего дома`;
+        // }
 
-        if (window.innerWidth <= "522") {
-            document.querySelector(".tit_catch_choose").innerHTML = `цепляющий итоговый текст `;
-        } else if (window.innerWidth >= "522") {document.querySelector(".tit_catch_choose").innerHTML = `цепляющий <br> итоговый текст `;
-        }
+        // if (window.innerWidth <= "522") {
+        //     document.querySelector(".tit_catch_choose").innerHTML = `цепляющий итоговый текст `;
+        // } else if (window.innerWidth >= "522") {document.querySelector(".tit_catch_choose").innerHTML = `цепляющий <br> итоговый текст `;
+        // }
 
-        if (window.innerWidth <= "440") {
-            document.querySelector(".title_sert").innerHTML = ` Наша продукция сертифицирована по ГОСТ`;
-        } else if (window.innerWidth >= "440") {
-            document.querySelector(".title_sert").innerHTML = ` Наша продукция<br> сертифицирована<br>по ГОСТ`;
-        } else if (window.innerWidth >= "310") {
-            document.querySelector(".title_sert").innerHTML = ` Наша продукция<br> сертифицирована<br>по ГОСТ`;
-        }
+        // if (window.innerWidth <= "440") {
+        //     document.querySelector(".title_sert").innerHTML = ` Наша продукция сертифицирована по ГОСТ`;
+        // } else if (window.innerWidth >= "440") {
+        //     document.querySelector(".title_sert").innerHTML = ` Наша продукция<br> сертифицирована<br>по ГОСТ`;
+        // } else if (window.innerWidth >= "310") {
+        //     document.querySelector(".title_sert").innerHTML = ` Наша продукция<br> сертифицирована<br>по ГОСТ`;
+        // }
     }
 
     changePriceCalc() {
