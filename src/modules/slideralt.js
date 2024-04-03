@@ -20,32 +20,24 @@ export const sliderAlt = () => {
     const changePagin = () => {
         const activeFract = container.querySelector('.active_bar')
         const allFract = container.querySelectorAll('.progress_bar')
+        const slides = slideAltel.root.querySelectorAll('.splide__slide')
         
         activeFract.classList.remove('active_bar')
         allFract[slideAltel.index].classList.add('active_bar')
-    }
-
-    const next = () => {
-        slideAltel.go('+')
-        const slides = slideAltel.root.querySelectorAll('.splide__slide')
         altParagraph.textContent = slides[slideAltel.index].alt
     }
-
-    const prev = () => {
-        slideAltel.go('-')
-        const slides = slideAltel.root.querySelectorAll('.splide__slide')
-        altParagraph.textContent = slides[slideAltel.index].alt
-    }
-
 
     arrowBlock.addEventListener('click', (e) => {
         e.preventDefault()
         if(e.target.className === 'arrow_grey_slide_left'){
-            prev()
+            slideAltel.go('-')
             changePagin()
         } else if(e.target.className === 'arrow_grey_slide_right'){
-            next()
+            slideAltel.go('+')
             changePagin()
         }
+    })
+    slideAltel.on('mounted move', (e) => {
+        changePagin()
     })
 }

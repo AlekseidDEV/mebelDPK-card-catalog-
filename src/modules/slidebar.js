@@ -1,7 +1,13 @@
 export const slideBar = (arr) => {
 
     const addStrip = (element) => {
-        const countStrip = element.querySelectorAll('img').length
+        let countStrip
+
+        if(element.id === 'slide-5'){
+            countStrip = element.querySelectorAll('iframe').length
+        } else{
+            countStrip = element.querySelectorAll('img').length
+        }
 
         const slideBar = element.querySelector('.slide_bar')
 
