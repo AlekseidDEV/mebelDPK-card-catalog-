@@ -21,9 +21,16 @@ export const sliders = (id, wrapper) => {
         if(count >= slides.length){
             count = 0
         }
-    
+
         activeSlide.classList.remove(classActive.slice(1))
         slides[count].classList.add(classActive.slice(1))
+
+        if(id === 'slider-1'|| id === 'slider-2' || id === 'slider-3'){
+            const parentEl = slides[count].parentElement.parentElement
+            const paragraphAlt = parentEl.querySelector('.pos_char_lest')
+
+            paragraphAlt.textContent = slides[count].alt
+        }
 
         changeStrip(slider.querySelector('.slide_bar'), count)
     }
@@ -39,6 +46,13 @@ export const sliders = (id, wrapper) => {
 
         activeslide.classList.remove(classActive.slice(1))
         slides[count].classList.add(classActive.slice(1))
+        
+        if(id === 'slider-1'|| id === 'slider-2' || id === 'slider-3'){
+            const parentEl = slides[count].parentElement.parentElement
+            const paragraphAlt = parentEl.querySelector('.pos_char_lest')
+
+            paragraphAlt.textContent = slides[count].alt
+        }
 
         changeStrip(slider.querySelector('.slide_bar'), count)
     }
