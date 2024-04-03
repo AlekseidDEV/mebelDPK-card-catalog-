@@ -3584,3 +3584,23 @@
     #swiper1 .splide__track{
         overflow: visible;
     }
+
+    .disc_card_txt{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .title_dis_card{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    @media (max-width: 414px) {
+    .title_dis_card{
+        font-size: 28px;
+    }
+
+    .desc_text_card{
+        font-size: 16px;
+    }
+    }

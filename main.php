@@ -589,15 +589,15 @@ while($ob = $res->GetNextElement()){
                       </div>
                   </div>
   
-                  <div class="disc_card">
-                          <div>
+                  <div class="disc_card_txt">
+                         
                               <p class="title_dis_card">
                                   Цена производителя
                               </p>
                               <p class="desc_text_card">
 Приобретая товары у нас, вы покупаете напрямую от производителя, без наценок. Более того у нас действует гарантия лучше цены. Нашли стоимость товара дешевле, чем у нас? – предложим цену ниже!
                               </p>
-                          </div>
+                          
                       </div>
               </div>
           </div>
@@ -1627,27 +1627,6 @@ $res3 = CIBlockElement::GetList(Array(), $arFilter3, false, Array(), $arSelect3)
                                 </p>
                             </div>
                         </div>
-                        <div class="img_tab_">
-                            <img src="/upload/medialibrary/3f5/h2hbb8jjdetd0dm29lns03ppdal81odq.jpg" alt="img" class="worker_tabs_img">
-                            <p class="name_worker">Алексей</p>
-                            <p class="job">
-                                руководитель ОП
-                            </p>
-                            <div class="block_connection__worker">
-                                <div class="conn_phone">
-                                    <p class="tit_conn">
-                                        Как связаться:
-                                    </p>
-                                    <p class="tit_phone_conn">
-                                        +7 (499) 226-00-24
-                                    </p>
-                                </div>
-  
-                                <div class="social_conn">
-                                    <a href="https://api.whatsapp.com/send?phone=89267616799" target="_blank" rel="noopener noreferrer" class="link_wats"></a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
   
   
@@ -1672,27 +1651,6 @@ $res3 = CIBlockElement::GetList(Array(), $arFilter3, false, Array(), $arSelect3)
                                 <p class="text_stock quest_text_cust">
 
                                 </p>
-                            </div>
-                        </div>
-                        <div class="img_tab_">
-                            <img src="/upload/medialibrary/3f5/h2hbb8jjdetd0dm29lns03ppdal81odq.jpg" alt="img" class="worker_tabs_img">
-                            <p class="name_worker">Алексей</p>
-                            <p class="job">
-                                руководитель ОП
-                            </p>
-                            <div class="block_connection__worker">
-                                <div class="conn_phone">
-                                    <p class="tit_conn">
-                                        Как связаться:
-                                    </p>
-                                    <p class="tit_phone_conn">
-                                        +7 (499) 226-00-24
-                                    </p>
-                                </div>
-  
-                                <div class="social_conn">
-                                    <a href="https://api.whatsapp.com/send?phone=89267616799" target="_blank" rel="noopener noreferrer" class="link_wats"></a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1720,27 +1678,6 @@ $res3 = CIBlockElement::GetList(Array(), $arFilter3, false, Array(), $arSelect3)
                                 </p>
                             </div>
                         </div>
-                        <div class="img_tab_">
-                            <img src="/upload/medialibrary/3f5/h2hbb8jjdetd0dm29lns03ppdal81odq.jpg" alt="img" class="worker_tabs_img">
-                            <p class="name_worker">Алексей</p>
-                            <p class="job">
-                                руководитель ОП
-                            </p>
-                            <div class="block_connection__worker">
-                                <div class="conn_phone">
-                                    <p class="tit_conn">
-                                        Как связаться:
-                                    </p>
-                                    <p class="tit_phone_conn">
-                                        +7 (499) 226-00-24
-                                    </p>
-                                </div>
-  
-                                <div class="social_conn">
-                                    <a href="https://api.whatsapp.com/send?phone=89267616799" target="_blank" rel="noopener noreferrer" class="link_wats"></a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
   
                     <div class="tab_info_cont ">
@@ -1764,27 +1701,6 @@ $res3 = CIBlockElement::GetList(Array(), $arFilter3, false, Array(), $arSelect3)
                                 <p class="text_stock quest_text_cust">
 
                                 </p>
-                            </div>
-                        </div>
-                        <div class="img_tab_">
-                            <img src="/upload/medialibrary/3f5/h2hbb8jjdetd0dm29lns03ppdal81odq.jpg" alt="img" class="worker_tabs_img">
-                            <p class="name_worker">Алексей</p>
-                            <p class="job">
-                                руководитель ОП
-                            </p>
-                            <div class="block_connection__worker">
-                                <div class="conn_phone">
-                                    <p class="tit_conn">
-                                        Как связаться:
-                                    </p>
-                                    <p class="tit_phone_conn">
-                                        +7 (499) 226-00-24
-                                    </p>
-                                </div>
-  
-                                <div class="social_conn">
-                                    <a href="https://api.whatsapp.com/send?phone=89267616799" target="_blank" rel="noopener noreferrer" class="link_wats"></a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1812,27 +1728,6 @@ $res3 = CIBlockElement::GetList(Array(), $arFilter3, false, Array(), $arSelect3)
                                 </p>
                             </div>
                         </div>
-                        <div class="img_tab_">
-                            <img src="/upload/medialibrary/3f5/h2hbb8jjdetd0dm29lns03ppdal81odq.jpg" alt="img" class="worker_tabs_img">
-                            <p class="name_worker">Алексей</p>
-                            <p class="job">
-                                руководитель ОП
-                            </p>
-                            <div class="block_connection__worker">
-                                <div class="conn_phone">
-                                    <p class="tit_conn">
-                                        Как связаться:
-                                    </p>
-                                    <p class="tit_phone_conn">
-                                        +7 (499) 226-00-24
-                                    </p>
-                                </div>
-  
-                                <div class="social_conn">
-                                    <a href="https://api.whatsapp.com/send?phone=89267616799" target="_blank" rel="noopener noreferrer" class="link_wats"></a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
   
                     <div class="tab_info_cont ">
@@ -1856,27 +1751,6 @@ $res3 = CIBlockElement::GetList(Array(), $arFilter3, false, Array(), $arSelect3)
                                 <p class="text_stock quest_text_cust">
 
                                 </p>
-                            </div>
-                        </div>
-                        <div class="img_tab_">
-                            <img src="/upload/medialibrary/3f5/h2hbb8jjdetd0dm29lns03ppdal81odq.jpg" alt="img" class="worker_tabs_img">
-                            <p class="name_worker">Алексей</p>
-                            <p class="job">
-                                руководитель ОП
-                            </p>
-                            <div class="block_connection__worker">
-                                <div class="conn_phone">
-                                    <p class="tit_conn">
-                                        Как связаться:
-                                    </p>
-                                    <p class="tit_phone_conn">
-                                        +7 (499) 226-00-24
-                                    </p>
-                                </div>
-  
-                                <div class="social_conn">
-                                    <a href="https://api.whatsapp.com/send?phone=89267616799" target="_blank" rel="noopener noreferrer" class="link_wats"></a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1905,27 +1779,6 @@ $res3 = CIBlockElement::GetList(Array(), $arFilter3, false, Array(), $arSelect3)
                                 </p>
                             </div>
                         </div>
-                        <div class="img_tab_">
-                            <img src="/upload/medialibrary/3f5/h2hbb8jjdetd0dm29lns03ppdal81odq.jpg" alt="img" class="worker_tabs_img">
-                            <p class="name_worker">Алексей</p>
-                            <p class="job">
-                                руководитель ОП
-                            </p>
-                            <div class="block_connection__worker">
-                                <div class="conn_phone">
-                                    <p class="tit_conn">
-                                        Как связаться:
-                                    </p>
-                                    <p class="tit_phone_conn">
-                                        +7 (499) 226-00-24
-                                    </p>
-                                </div>
-  
-                                <div class="social_conn">
-                                    <a href="https://api.whatsapp.com/send?phone=89267616799" target="_blank" rel="noopener noreferrer" class="link_wats"></a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
   
                     <div class="tab_info_cont ">
@@ -1949,27 +1802,6 @@ $res3 = CIBlockElement::GetList(Array(), $arFilter3, false, Array(), $arSelect3)
                                 <p class="text_stock quest_text_cust">
                                     
                                 </p>
-                            </div>
-                        </div>
-                        <div class="img_tab_">
-                            <img src="/upload/medialibrary/3f5/h2hbb8jjdetd0dm29lns03ppdal81odq.jpg" alt="img" class="worker_tabs_img">
-                            <p class="name_worker">Алексей</p>
-                            <p class="job">
-                                руководитель ОП
-                            </p>
-                            <div class="block_connection__worker">
-                                <div class="conn_phone">
-                                    <p class="tit_conn">
-                                        Как связаться:
-                                    </p>
-                                    <p class="tit_phone_conn">
-                                        +7 (499) 226-00-24
-                                    </p>
-                                </div>
-  
-                                <div class="social_conn">
-                                    <a href="https://api.whatsapp.com/send?phone=89267616799" target="_blank" rel="noopener noreferrer" class="link_wats"></a>
-                                </div>
                             </div>
                         </div>
                     </div>
