@@ -1387,6 +1387,7 @@
     }
     
     .disc_card {
+        justify-content: end;
         display: flex;
         max-width: 467px;
         width: 100%;
