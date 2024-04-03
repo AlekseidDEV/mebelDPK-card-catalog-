@@ -12,6 +12,7 @@
         color: #575757;
         font-size: 40px;
         font-style: italic;
+        line-height: 120%;
     }
     .adapt_stub_image {
         max-width: 841px;
@@ -102,7 +103,7 @@
         flex-wrap: wrap;
         gap: 10px;
     }
-    
+
     .char_img_tizer{
         margin-bottom: 15px !important;
     }
@@ -147,7 +148,20 @@
         margin-top: 5px !important;
         margin-bottom: 0px !important;
     }
+
+
+    @media (max-width: 393px) {
+        .tizer_sub_char_block{
+            justify-content: center;
+        }
+
+        .tizer_sub_char_item{
+            max-width: 300px;
+            width: 100%;
+        }
+    }
     
+
     @media (hover: hover) {
         .arrow_green_card_left:hover {
             background: url(https://dev.mebeldpk.ru/upload/medialibrary/220/h2y62giglgqqgbwe5k3jh5dm17p7kjbk.svg);
@@ -1221,7 +1235,6 @@
     
     .wrapper_card_choose {
         max-width: 493px !important;
-        max-height: 371px;
         height: 100%;
         flex-direction: column;
     }
@@ -1268,15 +1281,6 @@
         width: 100% !important;
     }
     
-    .one::after,
-    .two::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        height: 162px;
-    }
-    
     .one::after {
         background: url(https://dev.mebeldpk.ru/upload/medialibrary/276/51pkxfbmvn883z1ikqcqymlsp05hww87.svg) no-repeat center;
         width: 75px;
@@ -1292,14 +1296,17 @@
         width: 128px;
     }
     
+    .one::after,
+    .two::after,
     .five::after,
     .four::after,
     .free::after {
         position: absolute;
         content: "";
-        top: 0;
-        left: 0;
         height: 162px;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
     }
     
     .four::after {
@@ -1315,6 +1322,7 @@
     .cont_ch {
         position: relative;
         background: #2e9375;
+        padding: 10px;
     }
     
     .card_choose_,
@@ -2429,6 +2437,10 @@
         font-weight: 700;
         line-height: normal;
     }
+
+    .option_desc{
+        margin-bottom: 0 !important;
+    }
     
     .tit_worker_que {
         color: #2e9375;
@@ -2455,6 +2467,13 @@
         max-width: 250px !important;
         width: 100%;
     }
+
+    @media (max-width: 1575px){
+        .card_block_choose {
+            justify-content: center;
+        }
+    }
+
     @media (max-width: 1560px) {
     .card_block_turn {
             justify-content: center;
@@ -2464,12 +2483,7 @@
             justify-content: center;
             gap: 50px 10px;
         }
-    
-        
-        .card_block_choose {
-            justify-content: center;
-        }
-    
+
     .card_block_ralling,
         .wrapper_text_rall {
             justify-content: center;
@@ -3043,6 +3057,7 @@
             transition: max-height 0.3s ease;
             overflow: hidden;
             max-height: 0;
+            margin-left: 0;
         }
     
         .tit_sub_worker_que,
@@ -3560,4 +3575,12 @@
         object-fit: cover;
         width: 100%;
         border-radius: 50px;
+    }
+
+    #slide-5 iframe{
+        height: 493px !important;
+    }
+
+    #swiper1 .splide__track{
+        overflow: visible;
     }

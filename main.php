@@ -201,9 +201,10 @@ while($ob = $res->GetNextElement()){
                                 <div class="block_img_rall">
                                     <span class="items_pos"></span>
                                     <div class="wrapp_items_slides">
-                                        <img class="rall_img active_slide" src="/upload/medialibrary/1f3/n22usatv23hsofluxnmz34dittrg2av2.png" alt="Перила стандарт полностью из ДПК ">
+                                    <img class="rall_img active_slide" src="/upload/medialibrary/618/2mbfws6tly8eyot6rgkbey4r61y48qco.png" alt="Перила Эко стандарт">
+                                        <!-- <img class="rall_img active_slide" src="/upload/medialibrary/1f3/n22usatv23hsofluxnmz34dittrg2av2.png" alt="Перила стандарт полностью из ДПК "> -->
                                         <img class="rall_img" src="/upload/medialibrary/490/oblqlvzte3hhckiex3hh193bp5iozx1g.png" alt="Перила полностью из ДПК горизонт">
-                                        <img class="rall_img rall_img_act" src="/upload/medialibrary/1db/gde2ifjp5goc6g0ajcrh26br6bc86kzj.png" alt="Перила полностью из ДПК крест">
+                                        <img class="rall_img" src="/upload/medialibrary/1db/gde2ifjp5goc6g0ajcrh26br6bc86kzj.png" alt="Перила полностью из ДПК крест">
                                     </div>
                                     <div class="slide_bar">
   
@@ -234,7 +235,8 @@ while($ob = $res->GetNextElement()){
                                     <span class="items_pos"></span>
   
                                     <div class="wrapp_items_slides">
-                                        <img class="rall_img active_slide" src="/upload/medialibrary/dbf/oq661kw8z4m9c9ktbkrhzbovj2la2ctv.png" alt="Кованные перила капля">
+                                    <img class="rall_img active_slide" src="/upload/medialibrary/618/2mbfws6tly8eyot6rgkbey4r61y48qco.png" alt="Перила Эко стандарт">
+                                        <!-- <img class="rall_img active_slide" src="/upload/medialibrary/dbf/oq661kw8z4m9c9ktbkrhzbovj2la2ctv.png" alt="Кованные перила капля"> -->
                                         <img class="rall_img" src="/upload/medialibrary/0cf/5mdzm9az1g8xp6sxrw8j52akvpaxvir7.png" alt="Перила ковка Бабочка">
                                         <img class="rall_img" src="/upload/medialibrary/141/phghrhtw7izc3fph9qhf9ah63gkdht6z.png" alt="Кованные перила Корзинка">
                                     </div>
